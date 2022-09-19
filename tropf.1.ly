@@ -55,11 +55,11 @@ KleineTrommelNoten = {
         \KleinEins | \KleinEins | \KleinZwei | \KleinDrei |
 }
 
-KleineTrommel = \new DrumVoice <<
+KleineTrommel = {
         \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
 	\set Staff.instrumentName = #"Kleine"
 	\set Staff.midiInstrument = #"melodic tom"
->>
+}
 
 GrosseTrommelNoten = {
         \GrossEins | \GrossEins | \GrossZwei | \GrossEins |
@@ -68,11 +68,11 @@ GrosseTrommelNoten = {
         \GrossEins | \GrossEins | \GrossZwei | \GrossDrei |
 }
 
-GrosseTrommel = \new DrumVoice <<
+GrosseTrommel = {
         \new DrumVoice = "GrosseTrommel " \GrosseTrommelNoten
 	\set Staff.instrumentName = #"Grosse"
 	\set Staff.midiInstrument = #"melodic tom"
->>
+}
 
 \score {
 	\new StaffGroup <<
