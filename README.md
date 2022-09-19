@@ -1,4 +1,4 @@
-# TrommlerUndPfeifer
+# Trommler & Pfeifer
 
 Noten und Midi Dateien für die Trommler & Pfeifer.
 
