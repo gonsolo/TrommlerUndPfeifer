@@ -1,3 +1,3 @@
 # TrommlerUndPfeifer
 
-Noten und Midi Dateien für die Trommmler & Pfeifer.
+Noten und Midi Dateien für die Trommler & Pfeifer.
