@@ -48,7 +48,7 @@ KleinDrei = \drummode {
         tommh2.
 }
 
-KleineTrommelNoten = \drummode {
+KleineTrommelNoten = {
         \KleinEins | \KleinEins | \KleinZwei | \KleinEins |
         \KleinEins | \KleinEins | \KleinZwei | \KleinEins |
         \KleinEins | \KleinEins | \KleinZwei | \KleinEins |
@@ -59,7 +59,6 @@ KleineTrommel = \new DrumVoice <<
         \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
 	\set Staff.instrumentName = #"Kleine"
 	\set Staff.midiInstrument = #"melodic tom"
-
 >>
 
 GrosseTrommelNoten = {
@@ -73,7 +72,6 @@ GrosseTrommel = \new DrumVoice <<
         \new DrumVoice = "GrosseTrommel " \GrosseTrommelNoten
 	\set Staff.instrumentName = #"Grosse"
 	\set Staff.midiInstrument = #"melodic tom"
-
 >>
 
 \score {
