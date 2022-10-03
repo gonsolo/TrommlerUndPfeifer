@@ -11,40 +11,40 @@ global = {
 }
 
 GrossEins = \drummode {
-	tomfh16 tomfh16 tomfh16 tomfh16 
-        tomfh8 tomfh16 tomfh16 
-        tomfh8 tomfh16 tomfh16 
-        tomfh8 tomfh16 tomfh16 
+	tomfh16 tomfh16 tomfh16 tomfh16
+        tomfh8 tomfh16 tomfh16
+        tomfh8 tomfh16 tomfh16
+        tomfh8 tomfh16 tomfh16
 }
 
 GrossZwei = \drummode {
-	tomfh16 tomfh16 tomfh16 tomfh16 
+	tomfh16 tomfh16 tomfh16 tomfh16
         tomfh8 tomfh8
-	tomfh16 tomfh16 tomfh16 tomfh16 
+	tomfh16 tomfh16 tomfh16 tomfh16
         tomfh8 tomfh8
 }
 
 GrossDrei = \drummode {
-	tomfh16 tomfh16 tomfh16 tomfh16 
+	tomfh16 tomfh16 tomfh16 tomfh16
         tomfh2.
 }
 
 KleinEins = \drummode {
-	tommh16 tommh16 tommh16 tommh16 
+	tommh16 tommh16 tommh16 tommh16
         tommh4
         tommh4
         tommh4
 }
 
 KleinZwei = \drummode {
-	tommh16 tommh16 tommh16 tommh16 
+	tommh16 tommh16 tommh16 tommh16
         tommh8 tommh8
-	tommh16 tommh16 tommh16 tommh16 
+	tommh16 tommh16 tommh16 tommh16
         tommh8 tommh8
 }
 
 KleinDrei = \drummode {
-	tommh16 tommh16 tommh16 tommh16 
+	tommh16 tommh16 tommh16 tommh16
         tommh2.
 }
 
