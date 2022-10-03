@@ -1,8 +1,3 @@
-global = {
-        \time 4/4
-	\tempo 4 = 120
-}
-
 GrossEins = \drummode {
 	tomfh16 tomfh16 tomfh16 tomfh16
         tomfh8 tomfh16 tomfh16
@@ -49,6 +44,7 @@ KleineTrommelNoten = {
 }
 
 KleineTrommel = {
+	\tempo 4 = 120
 	\set DrumStaff.instrumentName = "Kleine Trommel"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
@@ -75,8 +71,8 @@ GrosseTrommel = {
                 piece = "I"
         }
 	\new StaffGroup <<
-                \new DrumStaff << \global \KleineTrommel >>
-                \new DrumStaff << \global \GrosseTrommel >>
+                \new DrumStaff << \KleineTrommel >>
+                \new DrumStaff << \GrosseTrommel >>
 	>>
 	\layout {
                 indent = 4.0\cm
