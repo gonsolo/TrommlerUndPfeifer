@@ -10,3 +10,6 @@
 \include "02.ly"
 \include "03.ly"
 \include "04.ly"
+\include "05.ly"
+\include "06.ly"
+\include "07.ly"

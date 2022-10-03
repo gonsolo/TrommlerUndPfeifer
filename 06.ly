@@ -1,14 +1,9 @@
 KleineTrommelNoten = {
         \drummode {
+                tommh4. tommh4. tommh4
+                tommh4. tommh4. tommh4
+                tommh4. tommh4. tommh4
                 tommh4 tommh4 tommh4 tommh4
-                tommh2 tommh2
-                tommh4 tommh4 tommh4 tommh4
-                tommh2 tommh2
-                tommh8 tommh16 tommh16 tommh4 tommh2
-                tommh4 tommh4 tommh4 tommh4
-                tommh4 tommh4 tommh4 tommh4
-                tommh2 tommh2
-                tommh8 tommh16 tommh16 tommh4 tommh2
         }
 }
 
@@ -39,7 +34,7 @@ GrosseTrommel = {
 
 \score {
         \header {
-                piece = "V (TODO)"
+                piece = "VI (TODO)"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>
