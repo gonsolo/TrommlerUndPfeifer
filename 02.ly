@@ -3,25 +3,6 @@ global = {
 	\tempo 4 = 120
 }
 
-GrossEins = \drummode {
-	tomfh16 tomfh16 tomfh16 tomfh16
-        tomfh8 tomfh16 tomfh16
-        tomfh8 tomfh16 tomfh16
-        tomfh8 tomfh16 tomfh16
-}
-
-GrossZwei = \drummode {
-	tomfh16 tomfh16 tomfh16 tomfh16
-        tomfh8 tomfh8
-	tomfh16 tomfh16 tomfh16 tomfh16
-        tomfh8 tomfh8
-}
-
-GrossDrei = \drummode {
-	tomfh16 tomfh16 tomfh16 tomfh16
-        tomfh2.
-}
-
 KleinEins = \drummode {
 	tommh16 tommh16 tommh16 tommh16
         tommh4
@@ -56,11 +37,40 @@ KleineTrommel = {
         \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
 }
 
+GrossEins = \drummode {
+        tomfh8 tomfh16 tomfh16
+        tomfh4
+}
+
+GrossZwei = \drummode {
+        tomfh8 tomfh16 tomfh16
+        tomfh8 tomfh8
+}
+
+GrossDrei = \drummode {
+        tomfh4.
+        tomfh16 tomfh16
+}
+
+GrossVier = \drummode {
+        tomfh8 tomfh8
+        tomfh8 tomfh16 tomfh16
+}
+
+GrossFuenf = \drummode {
+        tomfh8 tomfh8
+        tomfh16 tomfh16 tomfh16 tomfh16
+}
+
+GrossSechs = \drummode {
+        tomfh2
+}
+
 GrosseTrommelNoten = {
-        \GrossEins | \GrossEins | \GrossZwei | \GrossEins |
-        \GrossEins | \GrossEins | \GrossZwei | \GrossEins |
-        \GrossEins | \GrossEins | \GrossZwei | \GrossEins |
-        \GrossEins | \GrossEins | \GrossZwei | \GrossDrei |
+        \GrossEins \GrossEins | \GrossZwei \GrossEins |
+        \GrossEins \GrossEins | \GrossZwei \GrossDrei |
+        \GrossVier \GrossVier | \GrossFuenf \GrossVier |
+        \GrossVier \GrossVier | \GrossFuenf \GrossSechs |
 }
 
 GrosseTrommel = {
@@ -72,15 +82,15 @@ GrosseTrommel = {
 
 \score {
         \header {
-                piece = "II"
+                piece = "II (TODO)"
         }
 	\new StaffGroup <<
-                \new DrumStaff << \global \KleineTrommel >>
+                %\new DrumStaff << \global \KleineTrommel >>
                 \new DrumStaff << \global \GrosseTrommel >>
 	>>
 	\layout {
                 indent = 4.0\cm
         }
-	%\midi {}
+	\midi {}
 }
 
