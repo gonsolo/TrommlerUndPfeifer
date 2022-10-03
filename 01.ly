@@ -1,10 +1,3 @@
-\version "2.22.1"
-
-\header {
-	title = "Trommler & Pfeifer 1"
-        tagline = ""
-}
-
 global = {
         \time 4/4
 	\tempo 4 = 120
@@ -78,6 +71,9 @@ GrosseTrommel = {
 }
 
 \score {
+        \header {
+                piece = "I"
+        }
 	\new StaffGroup <<
                 \new DrumStaff << \global \KleineTrommel >>
                 \new DrumStaff << \global \GrosseTrommel >>
@@ -85,6 +81,6 @@ GrosseTrommel = {
 	\layout {
                 indent = 4.0\cm
         }
-	\midi {}
+	%\midi {}
 }
 

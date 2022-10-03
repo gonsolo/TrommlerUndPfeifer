@@ -1,15 +1,15 @@
 all: view
-view: tropf.1.pdf
+view: tropf.pdf
 	evince $<
 l: listen
 listen: tropf.1.midi
 	timidity $<
-tropf.1.pdf tropf.1.midi: tropf.1.ly
+tropf.pdf: tropf.ly 01.ly 02.ly
 	lilypond $<
 .PHONY: c clean e edit l listen
 c: clean
 clean:
-	rm -f tropf.1.pdf tropf.1.midi
+	rm -f tropf.pdf tropf.midi
 e: edit
 edit:
-	vi tropf.1.ly
+	vi tropf.2.ly
