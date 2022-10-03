@@ -1,22 +1,3 @@
-GrossEins = \drummode {
-	tomfh16 tomfh16 tomfh16 tomfh16
-        tomfh8 tomfh16 tomfh16
-        tomfh8 tomfh16 tomfh16
-        tomfh8 tomfh16 tomfh16
-}
-
-GrossZwei = \drummode {
-	tomfh16 tomfh16 tomfh16 tomfh16
-        tomfh8 tomfh8
-	tomfh16 tomfh16 tomfh16 tomfh16
-        tomfh8 tomfh8
-}
-
-GrossDrei = \drummode {
-	tomfh16 tomfh16 tomfh16 tomfh16
-        tomfh2.
-}
-
 KleinEins = \drummode {
 	tommh16 tommh16 tommh16 tommh16
         tommh4
@@ -36,11 +17,37 @@ KleinDrei = \drummode {
         tommh2.
 }
 
+GrossEins = \drummode {
+	tomfh16 tomfh16 tomfh16 tomfh16
+        tomfh8 tomfh16 tomfh16
+        tomfh8 tomfh16 tomfh16
+        tomfh8 tomfh16 tomfh16
+}
+
+GrossZwei = \drummode {
+	tomfh16 tomfh16 tomfh16 tomfh16
+        tomfh8 tomfh8
+	tomfh16 tomfh16 tomfh16 tomfh16
+        tomfh8 tomfh8
+}
+
+GrossDrei = \drummode {
+	tomfh16 tomfh16 tomfh16 tomfh16
+        tomfh2.
+}
+
 KleineTrommelNoten = {
         \KleinEins | \KleinEins | \KleinZwei | \KleinEins |
         \KleinEins | \KleinEins | \KleinZwei | \KleinEins |
         \KleinEins | \KleinEins | \KleinZwei | \KleinEins |
         \KleinEins | \KleinEins | \KleinZwei | \KleinDrei |
+}
+
+GrosseTrommelNoten = {
+        \GrossEins | \GrossEins | \GrossZwei | \GrossEins |
+        \GrossEins | \GrossEins | \GrossZwei | \GrossEins |
+        \GrossEins | \GrossEins | \GrossZwei | \GrossEins |
+        \GrossEins | \GrossEins | \GrossZwei | \GrossDrei |
 }
 
 KleineTrommel = {
@@ -50,13 +57,6 @@ KleineTrommel = {
         \set Staff.midiPanPosition = 1.0
         \set Staff.midiExpression = 0.7
         \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
-}
-
-GrosseTrommelNoten = {
-        \GrossEins | \GrossEins | \GrossZwei | \GrossEins |
-        \GrossEins | \GrossEins | \GrossZwei | \GrossEins |
-        \GrossEins | \GrossEins | \GrossZwei | \GrossEins |
-        \GrossEins | \GrossEins | \GrossZwei | \GrossDrei |
 }
 
 GrosseTrommel = {

@@ -1,10 +1,16 @@
 KleinEins = \drummode {
+        tommh2. tommh4
+        tommh1
+        tommh4. tommh4 tommh4 tommh8
+        tommh1
 }
 
 KleineTrommelNoten = {
+        \KleinEins
 }
 
 KleineTrommel = {
+        \tempo 4 = 120
 	\set DrumStaff.instrumentName = "Kleine Trommel"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
@@ -13,21 +19,15 @@ KleineTrommel = {
 }
 
 GrossEins = \drummode {
-	tomfh4 tomfh8 ~
-	tomfh4.
-	tomfh2.
-}
-
-GrossZwei = \drummode {
+        tomfh8 tomfh16 tomfh16
+        tomfh4
 }
 
 GrosseTrommelNoten = {
-        \GrossEins | \GrossEins | \GrossEins | \GrossEins 
 }
 
 GrosseTrommel = {
-	\tempo 4 = 180
-        \time 12/8
+        \tempo 4 = 120
 	\set Staff.instrumentName = "Große Trommel"
 	\set Staff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = -1.0
@@ -36,16 +36,15 @@ GrosseTrommel = {
 
 \score {
         \header {
-                piece = "III (TODO)"
+                piece = "IV (TODO)"
         }
-
 	\new StaffGroup <<
-                %\new DrumStaff << \KleineTrommel >>
-                \new DrumStaff << \GrosseTrommel >>
+                \new DrumStaff << \KleineTrommel >>
+                %\new DrumStaff << \GrosseTrommel >>
 	>>
 	\layout {
                 indent = 4.0\cm
         }
-	%\midi {}
+	\midi {}
 }
 
