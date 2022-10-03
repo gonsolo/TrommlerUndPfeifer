@@ -1,21 +1,15 @@
 KleineTrommelNoten = {
         \drummode {
-                tommh16 tommh16 tommh16 tommh16
-                r4
-                tommh16 tommh16 tommh16 tommh16
-                r4
-                |
-                tommh16 tommh16 tommh16 tommh16
-                r4
-                tommh4
-                tommh16 tommh16 tommh16 tommh16
-                |
-        
+                tommh4. tommh4. tommh4. tommh4 tommh8 |
+                tommh4. tommh4. tommh4. tommh4 tommh8 |
+                tommh4. tommh4. tommh4. tommh4 tommh8 |
+                tommh4 tommh8 ~ tommh4 tommh8 tommh4 tommh8 ~ tommh4 tommh8 |
         }
 }
 
 KleineTrommel = {
-        \tempo 4 = 120
+        \time 12/8
+	\tempo 4 = 180
 	\set DrumStaff.instrumentName = "Kleine Trommel"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
@@ -24,11 +18,13 @@ KleineTrommel = {
 }
 
 GrossEins = \drummode {
-        tomfh8 tomfh16 tomfh16
-        tomfh4
+}
+
+GrossZwei = \drummode {
 }
 
 GrosseTrommelNoten = {
+        \GrossEins | \GrossEins | \GrossEins | \GrossEins 
 }
 
 GrosseTrommel = {
@@ -40,8 +36,9 @@ GrosseTrommel = {
 
 \score {
         \header {
-                piece = "VIII (TODO)"
+                piece = "IX (TODO)"
         }
+
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>
                 %\new DrumStaff << \GrosseTrommel >>
@@ -49,6 +46,6 @@ GrosseTrommel = {
 	\layout {
                 indent = 4.0\cm
         }
-	%\midi {}
+	\midi {}
 }
 
