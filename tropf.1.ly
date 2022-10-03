@@ -56,9 +56,11 @@ KleineTrommelNoten = {
 }
 
 KleineTrommel = {
+	\set DrumStaff.instrumentName = "Kleine Trommel"
+	\set DrumStaff.midiInstrument = "melodic tom"
+        \set Staff.midiPanPosition = 1.0
+        \set Staff.midiExpression = 0.7
         \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
-	\set Staff.instrumentName = #"Kleine"
-	\set Staff.midiInstrument = #"melodic tom"
 }
 
 GrosseTrommelNoten = {
@@ -69,9 +71,10 @@ GrosseTrommelNoten = {
 }
 
 GrosseTrommel = {
+	\set Staff.instrumentName = "Große Trommel"
+	\set Staff.midiInstrument = "melodic tom"
+        \set Staff.midiPanPosition = -1.0
         \new DrumVoice = "GrosseTrommel " \GrosseTrommelNoten
-	\set Staff.instrumentName = #"Grosse"
-	\set Staff.midiInstrument = #"melodic tom"
 }
 
 \score {
@@ -79,7 +82,9 @@ GrosseTrommel = {
                 \new DrumStaff << \global \KleineTrommel >>
                 \new DrumStaff << \global \GrosseTrommel >>
 	>>
-	\layout {}
+	\layout {
+                indent = 4.0\cm
+        }
 	\midi {}
 }
 
