@@ -28,6 +28,11 @@ GrossDrei = \drummode {
         tomfh16 tomfh16
 }
 
+GrossDreiPiano = \drummode {
+        tomfh4.
+        tomfh16\p tomfh16
+}
+
 GrossVier = \drummode {
         tomfh8 tomfh8
         tomfh8 tomfh16 tomfh16
@@ -42,11 +47,24 @@ GrossSechs = \drummode {
         tomfh2
 }
 
-GrosseTrommelNoten = {
+TeilEins = {
         \GrossEins \GrossEins | \GrossZwei \GrossEins |
         \GrossEins \GrossEins | \GrossZwei \GrossDrei |
+}
+
+TeilZwei = {
         \GrossVier \GrossVier | \GrossFuenf \GrossVier |
         \GrossVier \GrossVier | \GrossFuenf \GrossSechs |
+}
+
+forte = \markup { \dynamic f }
+piano = \markup { \dynamic p }
+
+GrosseTrommelNoten = {
+        \repeat volta 4 {
+          \TeilEins
+          \TeilZwei
+      }
 }
 
 GrosseTrommel = {
@@ -54,8 +72,19 @@ GrosseTrommel = {
 	\set Staff.instrumentName = "Große Trommel"
 	\set Staff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = -1.0
-        \new DrumVoice = "GrosseTrommel " \GrosseTrommelNoten
+        \new DrumVoice = "GrosseTrommel "
+                %\GrosseTrommelNoten
+                {
+                        \TeilEins
+                        \addlyrics { \forte }
+                }
+                {
+                \TeilZwei
+                \addlyrics { \piano }
+              }
 }
+
+% L L | L _ | _ L | _ _ | L L
 
 \score {
         \header {
