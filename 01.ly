@@ -1,53 +1,67 @@
+KleinAuftakt = \drummode {
+        \partial 4 tommh16 tommh16 tommh16 tommh16
+}
+
 KleinEins = \drummode {
+        tommh4
+        tommh4
+        tommh4
 	tommh16 tommh16 tommh16 tommh16
-        tommh4
-        tommh4
-        tommh4
 }
 
 KleinZwei = \drummode {
-	tommh16 tommh16 tommh16 tommh16
         tommh8 tommh8
 	tommh16 tommh16 tommh16 tommh16
         tommh8 tommh8
+	tommh16 tommh16 tommh16 tommh16
 }
 
 KleinDrei = \drummode {
-	tommh16 tommh16 tommh16 tommh16
-        tommh2.
+        tommh1
+}
+
+GrossAuftakt = \drummode {
+        \partial 4 tomfh16 tomfh16 tomfh16 tomfh16
 }
 
 GrossEins = \drummode {
+        tomfh8 tomfh16 tomfh16
+        tomfh8 tomfh16 tomfh16
+        tomfh8 tomfh16 tomfh16
 	tomfh16 tomfh16 tomfh16 tomfh16
-        tomfh8 tomfh16 tomfh16
-        tomfh8 tomfh16 tomfh16
-        tomfh8 tomfh16 tomfh16
 }
 
 GrossZwei = \drummode {
-	tomfh16 tomfh16 tomfh16 tomfh16
         tomfh8 tomfh8
 	tomfh16 tomfh16 tomfh16 tomfh16
         tomfh8 tomfh8
+	tomfh16 tomfh16 tomfh16 tomfh16
 }
 
 GrossDrei = \drummode {
-	tomfh16 tomfh16 tomfh16 tomfh16
-        tomfh2.
+        tomfh1
 }
 
 KleineTrommelNoten = {
-        \KleinEins | \KleinEins | \KleinZwei | \KleinEins |
-        \KleinEins | \KleinEins | \KleinZwei | \KleinEins |
-        \KleinEins | \KleinEins | \KleinZwei | \KleinEins |
-        \KleinEins | \KleinEins | \KleinZwei | \KleinDrei |
+        \KleinAuftakt |
+        \repeat volta 4 {
+                \KleinEins | \KleinEins | \KleinZwei |
+        }
+        \alternative {
+                { \KleinEins }
+                { \KleinDrei }
+        }
 }
 
 GrosseTrommelNoten = {
-        \GrossEins | \GrossEins | \GrossZwei | \GrossEins |
-        \GrossEins | \GrossEins | \GrossZwei | \GrossEins |
-        \GrossEins | \GrossEins | \GrossZwei | \GrossEins |
-        \GrossEins | \GrossEins | \GrossZwei | \GrossDrei |
+        \GrossAuftakt |
+        \repeat volta 4 {
+                \GrossEins | \GrossEins | \GrossZwei |
+        }
+        \alternative {
+                { \GrossEins }
+                { \GrossDrei }
+        }
 }
 
 KleineTrommel = {
