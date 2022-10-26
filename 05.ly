@@ -1,14 +1,56 @@
+Viertel = {
+	\drummode {
+		tommh4 tommh4 tommh4 tommh4
+	}
+}
+
+Halbe = {
+	\drummode {
+                tommh2 tommh2
+	}
+}
+
+Dumdumadum = {
+	\drummode {
+                tommh8 tommh16 tommh16 tommh4 tommh2
+	}
+}
+
+HalbeViertelHalbe = {
+	\Halbe
+	\Viertel
+	\Halbe
+}
+
+Dumdumdumdumadum = {
+	\drummode {
+                tommh4 tommh4 tommh8 tommh16 tommh16 tommh4
+	}
+}
+
+Dumdumdumadumadum = {
+	\drummode {
+                tommh4 tommh4 tommh16 tommh16 tommh16 tommh16 tommh4
+	}
+}
+
+
 KleineTrommelNoten = {
         \drummode {
-                tommh4 tommh4 tommh4 tommh4
-                tommh2 tommh2
-                tommh4 tommh4 tommh4 tommh4
-                tommh2 tommh2
-                tommh8 tommh16 tommh16 tommh4 tommh2
-                tommh4 tommh4 tommh4 tommh4
-                tommh4 tommh4 tommh4 tommh4
-                tommh2 tommh2
-                tommh8 tommh16 tommh16 tommh4 tommh2
+		\Viertel
+		\repeat volta 2 {
+			\HalbeViertelHalbe
+			\Dumdumadum
+		}
+		\HalbeViertelHalbe
+
+		\repeat volta 2 {
+			\Dumdumdumdumadum
+			\Dumdumdumdumadum
+			\Viertel
+			\Dumdumdumadumadum
+		}
+		
         }
 }
 
@@ -21,29 +63,12 @@ KleineTrommel = {
         \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
 }
 
-GrossEins = \drummode {
-        tomfh8 tomfh16 tomfh16
-        tomfh4
-}
-
-GrosseTrommelNoten = {
-}
-
-GrosseTrommel = {
-        \tempo 4 = 120
-	\set Staff.instrumentName = "Große Trommel"
-	\set Staff.midiInstrument = "melodic tom"
-        \set Staff.midiPanPosition = -1.0
-        \new DrumVoice = "GrosseTrommel " \GrosseTrommelNoten
-}
-
 \score {
         \header {
-                piece = "V (TODO: Genau auszaehlen)"
+                piece = "V"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>
-                %\new DrumStaff << \GrosseTrommel >>
 	>>
 	\layout {
                 indent = 4.0\cm
