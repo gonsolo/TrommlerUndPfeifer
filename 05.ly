@@ -16,12 +16,6 @@ Dumdumadum = {
 	}
 }
 
-HalbeViertelHalbe = {
-	\Halbe
-	\Viertel
-	\Halbe
-}
-
 Dumdumdumdumadum = {
 	\drummode {
                 tommh4 tommh4 tommh8 tommh16 tommh16 tommh4
@@ -37,12 +31,17 @@ Dumdumdumadumadum = {
 
 KleineTrommelNoten = {
         \drummode {
-		\Viertel
 		\repeat volta 2 {
-			\HalbeViertelHalbe
-			\Dumdumadum
+			\Viertel
+			\Halbe
 		}
-		\HalbeViertelHalbe
+
+		\repeat volta 2 {
+			\Dumdumadum
+			\Halbe
+			\Viertel
+			\Halbe
+		}
 
 		\repeat volta 2 {
 			\Dumdumdumdumadum
