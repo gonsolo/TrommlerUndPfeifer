@@ -1,50 +1,36 @@
-KleinEins = \drummode {
-}
-
-KleineTrommelNoten = {
-}
-
-KleineTrommel = {
-        \tempo 4 = 120
-	\set DrumStaff.instrumentName = "Kleine Trommel"
-	\set DrumStaff.midiInstrument = "melodic tom"
-        \set Staff.midiPanPosition = 1.0
-        \set Staff.midiExpression = 0.7
-        \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
-}
-
 GrossEins = \drummode {
-        tomfh8 tomfh16 tomfh16
-        tomfh4
+        tommh8 tommh16 tommh16
+        tommh4
 }
 
 GrossZwei = \drummode {
-        tomfh8 tomfh16 tomfh16
-        tomfh8 tomfh8
+        tommh8 tommh16 tommh16
+        tommh8 tommh8
 }
 
 GrossDrei = \drummode {
-        tomfh4.
-        tomfh16 tomfh16
+	tommh2
+        %tommh4.
+        %tommh16 tommh16
 }
 
 GrossDreiPiano = \drummode {
-        tomfh4.
-        tomfh16\p tomfh16
+        tommh4.
+        tommh16\p tommh16
 }
 
 GrossVier = \drummode {
-        tomfh8 tomfh8
-        tomfh8 tomfh16 tomfh16
+        tommh8 tommh8
+        tommh8 tommh16 tommh16
 }
 
 GrossFuenf = \drummode {
-        tomfh8 tomfh8
-        tomfh16 tomfh16 tomfh16 tomfh16
+        tommh8 tommh8
+        tommh16 tommh16 tommh16 tommh16
 }
 
 GrossSechs = \drummode {
-        tomfh2
+        tommh2
 }
 
 TeilEins = {
@@ -60,29 +46,17 @@ TeilZwei = {
 forte = \markup { \dynamic f }
 piano = \markup { \dynamic p }
 
-GrosseTrommelNoten = {
-        \repeat volta 4 {
-          \TeilEins
-          \TeilZwei
-      }
-}
-
-GrosseTrommel = {
+KleineTrommel = {
         \tempo 4 = 120
-	\set Staff.instrumentName = "Große Trommel"
+	\set Staff.instrumentName = "Teil Eins"
 	\set Staff.midiInstrument = "melodic tom"
-        \set Staff.midiPanPosition = -1.0
-        \new DrumVoice = "GrosseTrommel "
-                %\GrosseTrommelNoten
+        \set Staff.midiPanPosition = 1.0
+        \new DrumVoice = "KleineTrommel "
                 {
                         \TeilEins
-                        \TeilZwei
+                        %\TeilZwei
                         %\addlyrics { \forte }
                 }
-                %{
-                %\TeilZwei
-                %\addlyrics { \piano }
-                %}
 }
 
 % L L | L _ | _ L | _ _ | L L
@@ -92,8 +66,7 @@ GrosseTrommel = {
                 piece = "II (TODO) (XX | Xx | xX | xx | XX)"
         }
 	\new StaffGroup <<
-                %\new DrumStaff << \global \KleineTrommel >>
-                \new DrumStaff << \GrosseTrommel >>
+                \new DrumStaff << \KleineTrommel >>
 	>>
 	\layout {
                 indent = 4.0\cm

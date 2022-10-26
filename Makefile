@@ -1,6 +1,7 @@
 all: view
 view: tropf.pdf
-	evince $<
+#	evince $<
+	open $<
 l: listen
 listen: tropf.midi
 	timidity $<
