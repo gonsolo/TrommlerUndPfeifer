@@ -9,9 +9,8 @@ GrossZwei = \drummode {
 }
 
 GrossDrei = \drummode {
-	tommh2
-        %tommh4.
-        %tommh16 tommh16
+        tommh4.
+        tommh16 tommh16
 }
 
 GrossDreiPiano = \drummode {
@@ -46,27 +45,54 @@ TeilZwei = {
 forte = \markup { \dynamic f }
 piano = \markup { \dynamic p }
 
-TeilEins = {
+TeilEinsStaff = {
         \tempo 4 = 120
-	\set Staff.instrumentName = "Teil Eins"
+	\set Staff.instrumentName = "Alle"
 	\set Staff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
         \new DrumVoice = "KleineTrommel "
                 {
                         \TeilEins
-                        %\TeilZwei
-                        %\addlyrics { \forte }
+                        \TeilZwei
                 }
 }
 
-% L L | L _ | _ L | _ _ | L L
-
 \score {
         \header {
-                piece = "II (TODO) (XX | Xx | xX | xx | XX)"
+                piece = "II"
         }
 	\new StaffGroup <<
-                \new DrumStaff << \TeilEins >>
+                \new DrumStaff << \TeilEinsStaff >>
+		\new Lyrics {
+			\lyricmode {
+				\set stanza  = "1. "
+				\forte _ _ _ _ _ _ _ \forte
+			}
+		}
+		\new Lyrics {
+			\lyricmode {
+				\set stanza  = "2. "
+				\forte _ _ _ _ _ _ _ \piano
+			}
+		}
+		\new Lyrics {
+			\lyricmode {
+				\set stanza  = "3. "
+				\piano _ _ _ _ _ _ _ \forte
+			}
+		}
+		\new Lyrics {
+			\lyricmode {
+				\set stanza  = "4. "
+				\piano _ _ _ _ _ _ _ \piano
+			}
+		}
+		\new Lyrics {
+			\lyricmode {
+				\set stanza  = "2. "
+				\forte _ _ _ _ _ _ _ \forte
+			}
+		}
 	>>
 	\layout {
                 indent = 4.0\cm
