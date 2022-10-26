@@ -76,19 +76,20 @@ GrosseTrommel = {
                 %\GrosseTrommelNoten
                 {
                         \TeilEins
-                        \addlyrics { \forte }
+                        \TeilZwei
+                        %\addlyrics { \forte }
                 }
-                {
-                \TeilZwei
-                \addlyrics { \piano }
-              }
+                %{
+                %\TeilZwei
+                %\addlyrics { \piano }
+                %}
 }
 
 % L L | L _ | _ L | _ _ | L L
 
 \score {
         \header {
-                piece = "II (TODO)"
+                piece = "II (TODO) (XX | Xx | xX | xx | XX)"
         }
 	\new StaffGroup <<
                 %\new DrumStaff << \global \KleineTrommel >>

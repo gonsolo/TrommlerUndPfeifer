@@ -36,7 +36,7 @@ GrosseTrommel = {
 
 \score {
         \header {
-                piece = "IV (TODO)"
+                piece = "IV (TODO: Pferd, Schluss)"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>

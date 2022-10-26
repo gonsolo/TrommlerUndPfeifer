@@ -36,7 +36,7 @@ GrosseTrommel = {
 
 \score {
         \header {
-                piece = "III (TODO)"
+                piece = "III (TODO: Schluss!)"
         }
 
 	\new StaffGroup <<

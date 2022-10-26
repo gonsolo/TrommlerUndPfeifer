@@ -17,3 +17,6 @@
 \include "09.ly"
 \include "10.ly"
 \include "15.ly"
+
+\include "klatschlied.ly"
+\include "vierer_medley.ly"
