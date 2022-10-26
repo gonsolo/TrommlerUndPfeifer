@@ -46,7 +46,7 @@ TeilZwei = {
 forte = \markup { \dynamic f }
 piano = \markup { \dynamic p }
 
-KleineTrommel = {
+TeilEins = {
         \tempo 4 = 120
 	\set Staff.instrumentName = "Teil Eins"
 	\set Staff.midiInstrument = "melodic tom"
@@ -66,7 +66,7 @@ KleineTrommel = {
                 piece = "II (TODO) (XX | Xx | xX | xx | XX)"
         }
 	\new StaffGroup <<
-                \new DrumStaff << \KleineTrommel >>
+                \new DrumStaff << \TeilEins >>
 	>>
 	\layout {
                 indent = 4.0\cm
