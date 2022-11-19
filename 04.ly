@@ -5,8 +5,30 @@ KleinEins = \drummode {
         tommh1
 }
 
+Pferd = \drummode {
+        tommh8_"Pferd" tommh16 tommh16
+        tommh8 tommh16 tommh16
+        tommh8 tommh16 tommh16
+        tommh8 tommh16 tommh16
+}
+
+Schluss = \drummode {
+        tommh2._"Schluss" tommh4
+        tommh1
+        tommh4. tommh4 tommh4.
+        tommh4. tommh4 tommh4.
+        tommh4. tommh4 tommh4 tommh8
+        tommh1
+}
+
 KleineTrommelNoten = {
-        \KleinEins
+        \repeat volta 4 {
+                \KleinEins
+        }
+        \repeat volta 4 {
+                \Pferd
+        }
+        \Schluss
 }
 
 KleineTrommel = {
@@ -36,7 +58,7 @@ GrosseTrommel = {
 
 \score {
         \header {
-                piece = "IV (TODO: Pferd, Schluss)"
+                piece = "IV"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>
