@@ -1,13 +1,28 @@
+% ta: Achtel
+ta = { \drummode { tommh8 } }
+
+% ts: Sechzehntel
+ts = { \drummode { tommh16 } }
+
+% tax: Akzentuierte Achtel
+tax = { \drummode { \ta \accent } }
+
 KleineTrommelNoten = {
         \drummode {
-                tommh8 tommh8 tommh8 tommh8
-                tommh8 tommh8 tommh8 tommh8 \accent
-                tommh8 \accent tommh8 tommh8 tommh8
-                tommh8 tommh8 tommh8 tommh8 \accent
-                tommh8 \accent tommh8 tommh8 tommh8
-                tommh8 tommh8 tommh8 tommh8 \accent
-                tommh8 \accent tommh8 tommh8 tommh8
-                tommh8 \accent tommh8 tommh8 \accent tommh8
+                \tax \ta \ta  \ta
+                \ta  \ta \ta  \tax
+                \tax \ta \ta  \ta
+                \ta  \ta \ta  \tax
+                \tax \ta \ta  \ta
+                \ta  \ta \ta  \tax
+                \tax \ta \ta  \ta
+                \tax \ta \tax \ta
+
+                \tax \ta \ta \ta
+                \ta \ta \ta \ts \ts
+                \ta \tax \ta \tax
+                \ta \tax \ta \ts \ts
+
         }
 }
 

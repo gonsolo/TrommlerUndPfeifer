@@ -1,6 +1,5 @@
 all: view
 view: tropf.pdf
-#	evince $<
 	open $<
 l: listen
 listen: tropf.midi
@@ -13,4 +12,4 @@ clean:
 	rm -f tropf.pdf *.midi
 e: edit
 edit:
-	vi 05.ly
+	vi 07.ly
