@@ -32,24 +32,25 @@ Dumdumdumadumadum = {
 KleineTrommelNoten = {
         \drummode {
 		\repeat volta 2 {
-			\Viertel
-			\Halbe
-		}
+			\repeat volta 2 {
+				\Viertel
+				\Halbe
+			}
 
-		\repeat volta 2 {
-			\Dumdumadum
-			\Halbe
-			\Viertel
-			\Halbe
-		}
+			\repeat volta 2 {
+				\Dumdumadum
+				\Halbe
+				\Viertel
+				\Halbe
+			}
 
-		\repeat volta 2 {
-			\Dumdumdumdumadum
-			\Dumdumdumdumadum
-			\Viertel
-			\Dumdumdumadumadum
-		}
-		
+			\repeat volta 2 {
+				\Dumdumdumdumadum
+				\Dumdumdumdumadum
+				\Viertel
+				\Dumdumdumadumadum
+			}
+		}	
         }
 }
 
