@@ -23,6 +23,9 @@ ks = { \drummode { tommh16 } }
 
 % Große Trommel (k) ===================
 
+% Achtel (a)
+ga = { \drummode { tomfh8 } }
+
 % Sechzehntel (s)
 gs = { \drummode { tomfh16 } }
 

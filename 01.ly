@@ -25,16 +25,16 @@ GrossAuftakt = \drummode {
 }
 
 GrossEins = \drummode {
-        tomfh8 \gs \gs
-        tomfh8 \gs \gs
-        tomfh8 \gs \gs
+        \ga \gs \gs
+        \ga \gs \gs
+        \ga \gs \gs
 	\gs \gs \gs \gs
 }
 
 GrossZwei = \drummode {
-        tomfh8 tomfh8
+        \ga \ga
 	\gs \gs \gs \gs
-        tomfh8 tomfh8
+        \ga \ga
 	\gs \gs \gs \gs
 }
 
