@@ -1,9 +1,10 @@
-% ka: Achtel kleine Trommel
+% Kleine Trommel
+% kv: kleine Viertel
+kv = { \drummode { tommh4 } }
+% ka: kleine Achtel
 ka = { \drummode { tommh8 } }
-
-% ks: Sechzehntel kleine Trommel
+% ks: kleine Sechzehntel
 ks = { \drummode { tommh16 } }
-
 % kax: Akzentuierte Achtel
 kax = { \drummode { \ka \accent } }
 
