@@ -9,12 +9,12 @@ GrossZwei = \drummode {
 }
 
 GrossDrei = \drummode {
-        tommh4.
+        \kvp
         \ks \ks
 }
 
 GrossDreiPiano = \drummode {
-        tommh4.
+        \kvp
         \ks\p \ks
 }
 

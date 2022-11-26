@@ -1,8 +1,8 @@
 KleineTrommelNoten = {
         \drummode {
-                tommh4. tommh4. tommh4. tommh4 \ka |
-                tommh4. tommh4. tommh4. tommh4 \ka |
-                tommh4. tommh4. tommh4. tommh4 \ka |
+                \kvp \kvp \kvp tommh4 \ka |
+                \kvp \kvp \kvp tommh4 \ka |
+                \kvp \kvp \kvp tommh4 \ka |
                 tommh4 \ka ~ tommh4 \ka tommh4 \ka ~ tommh4 \ka |
         }
 }
