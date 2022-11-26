@@ -32,6 +32,14 @@ GrossSechs = \drummode {
         tommh2
 }
 
+GrossSechsEins = \drummode {
+        tommh4 ss4
+}
+
+GrossSechsZwei = \drummode {
+        tommh4 ss8 ss8
+}
+
 TeilEins = {
         \GrossEins \GrossEins | \GrossZwei \GrossEins |
         \GrossEins \GrossEins | \GrossZwei \GrossDrei |
@@ -39,7 +47,7 @@ TeilEins = {
 
 TeilZwei = {
         \GrossVier \GrossVier | \GrossFuenf \GrossVier |
-        \GrossVier \GrossVier | \GrossFuenf \GrossSechs |
+        \GrossVier \GrossVier | \GrossFuenf % \GrossSechs |
 }
 
 forte = \markup { \dynamic f }
@@ -52,8 +60,15 @@ TeilEinsStaff = {
         \set Staff.midiPanPosition = 1.0
         \new DrumVoice = "KleineTrommel "
                 {
-                        \TeilEins
-                        \TeilZwei
+                        \repeat volta 5 {
+                                \TeilEins
+                                \TeilZwei
+                        }
+                        \alternative {
+                                \GrossSechs
+                                \GrossSechsEins
+                                \GrossSechsZwei
+                        }
                 }
 }
 
@@ -89,7 +104,7 @@ TeilEinsStaff = {
 		}
 		\new Lyrics {
 			\lyricmode {
-				\set stanza  = "2. "
+				\set stanza  = "5. "
 				\forte _ _ _ _ _ _ _ \forte
 			}
 		}
