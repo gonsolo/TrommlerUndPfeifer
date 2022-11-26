@@ -3,6 +3,9 @@
 % Viertel (v)
 kv = { \drummode { tommh4 } }
 
+% Punktierte Viertel (vp)
+kvp = { \drummode { tommh4. } }
+
 % Achtel (a)
 ka = { \drummode { tommh8 } }
 
