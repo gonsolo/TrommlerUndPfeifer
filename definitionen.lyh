@@ -3,6 +3,12 @@
 % Ganze (g)
 kg = { \drummode { tommh1 } }
 
+% Halbe (h)
+kh = { \drummode { tommh2 } }
+
+% Punktierte Halbe (hp)
+khp = { \drummode { tommh2. } }
+
 % Viertel (v)
 kv = { \drummode { tommh4 } }
 
