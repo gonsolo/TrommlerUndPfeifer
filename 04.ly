@@ -6,10 +6,10 @@ KleinEins = \drummode {
 }
 
 Pferd = \drummode {
-        tommh8_"Pferd" tommh16 tommh16
-        tommh8 tommh16 tommh16
-        tommh8 tommh16 tommh16
-        tommh8 tommh16 tommh16
+        tommh8_"Pferd" \ks \ks
+        tommh8 \ks \ks
+        tommh8 \ks \ks
+        tommh8 \ks \ks
 }
 
 Schluss = \drummode {

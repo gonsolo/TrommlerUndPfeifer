@@ -11,20 +11,20 @@ TeilEins = {
 
 Steigerung = {
         \drummode {
-        	tommh16\< tommh16 tommh16 tommh16
-        	tommh16 tommh16 tommh16 tommh16
-        	tommh16 tommh16 tommh16 tommh16
-        	tommh16 tommh16 tommh16 tommh16 |
+        	\ks\< \ks \ks \ks
+        	\ks \ks \ks \ks
+        	\ks \ks \ks \ks
+        	\ks \ks \ks \ks |
 
-        	tommh16 tommh16 tommh16 tommh16
-        	tommh16 tommh16 tommh16 tommh16
-        	tommh16 tommh16 tommh16 tommh16
-        	tommh16 tommh16 tommh16 tommh16 |
+        	\ks \ks \ks \ks
+        	\ks \ks \ks \ks
+        	\ks \ks \ks \ks
+        	\ks \ks \ks \ks |
 
-        	tommh16 tommh16 tommh16 tommh16
-        	tommh16 tommh16 tommh16 tommh16
-        	tommh16 tommh16 tommh16 tommh16
-        	tommh16 tommh16 tommh16 tommh16 |
+        	\ks \ks \ks \ks
+        	\ks \ks \ks \ks
+        	\ks \ks \ks \ks
+        	\ks \ks \ks \ks |
 
 		tommh1\!
         }
@@ -33,15 +33,15 @@ Steigerung = {
 TeilZwei = {
         \drummode {
 		\repeat volta 4 {
-        		tommh16 \accent tommh16 tommh16 	tommh16
-        		tommh16 	tommh16 tommh16 \accent tommh16
-        		tommh16 	tommh16 tommh16 	tommh16
-        		tommh16 \accent	tommh16 tommh16 	tommh16 |
+        		\ks \accent \ks \ks 	\ks
+        		\ks 	\ks \ks \accent \ks
+        		\ks 	\ks \ks 	\ks
+        		\ks \accent	\ks \ks 	\ks |
 
-        		tommh16 	tommh16 tommh16 \accent tommh16
-        		tommh16 tommh16 tommh16 tommh16
-        		tommh16 \accent	tommh16 tommh16 	tommh16
-        		tommh16 	tommh16 tommh16 	tommh16 |
+        		\ks 	\ks \ks \accent \ks
+        		\ks \ks \ks \ks
+        		\ks \accent	\ks \ks 	\ks
+        		\ks 	\ks \ks 	\ks |
         	}
         }
 }

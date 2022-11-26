@@ -1,19 +1,19 @@
 KleinAuftakt = \drummode {
-        \partial 4 tommh16 tommh16 tommh16 tommh16
+        \partial 4 \ks \ks \ks \ks
 }
 
 KleinEins = \drummode {
         tommh4
         tommh4
         tommh4
-	tommh16 tommh16 tommh16 tommh16
+	\ks \ks \ks \ks
 }
 
 KleinZwei = \drummode {
         tommh8 tommh8 \accent
-	tommh16 tommh16 tommh16 tommh16
+	\ks \ks \ks \ks
         tommh8 tommh8 \accent
-	tommh16 tommh16 tommh16 tommh16
+	\ks \ks \ks \ks
 }
 
 KleinDrei = \drummode {

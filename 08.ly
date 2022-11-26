@@ -1,14 +1,14 @@
 KleineTrommelNoten = {
         \drummode {
-                tommh16 tommh16 tommh16 tommh16
+                \ks \ks \ks \ks
                 r4
-                tommh16 tommh16 tommh16 tommh16
+                \ks \ks \ks \ks
                 r4
                 |
-                tommh16 tommh16 tommh16 tommh16
+                \ks \ks \ks \ks
                 r4
                 tommh4
-                tommh16 tommh16 tommh16 tommh16
+                \ks \ks \ks \ks
                 |
         
         }
