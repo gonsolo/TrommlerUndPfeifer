@@ -7,7 +7,7 @@
 
 %\pageBreak
 
-\include "definitionen.ly"
+\include "definitionen.lyh"
 
 \include "01.ly"
 \include "02.ly"
