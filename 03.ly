@@ -16,7 +16,8 @@ KleineTrommelNoten = {
         \KleinEins
         \KleinEins
         \KleinEins
-        \KleinEins
+        \tuplet 3/2 { \ka[ r8 \ka] ~ } \kv \kv
+        \tuplet 3/2 { \ka[ \ka \ka] }
         \kg
 }
 
