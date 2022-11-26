@@ -1,4 +1,4 @@
-% Kleine Trommel (k)
+% Kleine Trommel (k) ==================
 
 % Ganze (g)
 kg = { \drummode { tommh1 } }
@@ -20,4 +20,9 @@ kax = { \drummode { \ka \accent } }
 
 % Sechzehntel (s)
 ks = { \drummode { tommh16 } }
+
+% Große Trommel (k) ===================
+
+% Sechzehntel (s)
+gs = { \drummode { tomfh16 } }
 

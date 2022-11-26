@@ -24,7 +24,7 @@ KleineTrommel = {
 }
 
 GrossEins = \drummode {
-        tomfh8 tomfh16 tomfh16
+        tomfh8 \gs \gs
         tomfh4
 }
 

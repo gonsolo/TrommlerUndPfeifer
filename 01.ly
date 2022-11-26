@@ -21,21 +21,21 @@ KleinDrei = \drummode {
 }
 
 GrossAuftakt = \drummode {
-        \partial 4 tomfh16 tomfh16 tomfh16 tomfh16
+        \partial 4 \gs \gs \gs \gs
 }
 
 GrossEins = \drummode {
-        tomfh8 tomfh16 tomfh16
-        tomfh8 tomfh16 tomfh16
-        tomfh8 tomfh16 tomfh16
-	tomfh16 tomfh16 tomfh16 tomfh16
+        tomfh8 \gs \gs
+        tomfh8 \gs \gs
+        tomfh8 \gs \gs
+	\gs \gs \gs \gs
 }
 
 GrossZwei = \drummode {
         tomfh8 tomfh8
-	tomfh16 tomfh16 tomfh16 tomfh16
+	\gs \gs \gs \gs
         tomfh8 tomfh8
-	tomfh16 tomfh16 tomfh16 tomfh16
+	\gs \gs \gs \gs
 }
 
 GrossDrei = \drummode {
