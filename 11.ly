@@ -1,10 +1,10 @@
 TeilEins = {
         \drummode {
 		\repeat volta 2 {
-        		tommh4 tommh8 tommh4 tommh8 tommh4 |
-			tommh8 tommh4 tommh8 tommh4 tommh4 |
-        		tommh4 tommh8 tommh4 tommh8 tommh4 |
-			tommh8 tommh4 tommh8 tommh2 |
+			tommh4 \ka tommh4 \ka tommh4 |
+			\ka tommh4 \ka tommh4 tommh4 |
+			tommh4 \ka tommh4 \ka tommh4 |
+			\ka tommh4 \ka tommh2 |
 		}
         }
 }
@@ -49,13 +49,13 @@ TeilZwei = {
 TeilDrei = {
         \drummode {
 		\repeat volta 2 {
-			\tuplet 3/2 { tommh8 tommh8 tommh8 }
+			\tuplet 3/2 { \ka \ka \ka }
 			tommh4
 			tommh4
-			\tuplet 3/2 { tommh8 tommh8 tommh8 } |
+			\tuplet 3/2 { \ka \ka \ka } |
 			tommh4
 			tommh4
-			\tuplet 3/2 { tommh8 tommh8 tommh8 }
+			\tuplet 3/2 { \ka \ka \ka }
 			tommh4
         	}
         }

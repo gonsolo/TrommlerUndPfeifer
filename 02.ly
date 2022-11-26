@@ -1,11 +1,11 @@
 GrossEins = \drummode {
-        tommh8 \ks \ks
+        \ka \ks \ks
         tommh4
 }
 
 GrossZwei = \drummode {
-        tommh8 \ks \ks
-        tommh8 tommh8
+        \ka \ks \ks
+        \ka \ka
 }
 
 GrossDrei = \drummode {
@@ -19,12 +19,12 @@ GrossDreiPiano = \drummode {
 }
 
 GrossVier = \drummode {
-        tommh8 tommh8
-        tommh8 \ks \ks
+        \ka \ka
+        \ka \ks \ks
 }
 
 GrossFuenf = \drummode {
-        tommh8 tommh8
+        \ka \ka
         \ks \ks \ks \ks
 }
 

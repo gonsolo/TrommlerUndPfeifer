@@ -12,13 +12,13 @@ Halbe = {
 
 Dumdumadum = {
 	\drummode {
-                tommh8 \ks \ks tommh4 tommh2
+                \ka \ks \ks tommh4 tommh2
 	}
 }
 
 Dumdumdumdumadum = {
 	\drummode {
-                tommh4 tommh4 tommh8 \ks \ks tommh4
+                tommh4 tommh4 \ka \ks \ks tommh4
 	}
 }
 

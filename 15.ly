@@ -1,9 +1,9 @@
 KleineTrommelNoten = {
         \drummode {
-                tommh8 tommh8 tommh8 tommh8 tommh8. tommh8. r8 |
-                tommh8 tommh8 tommh8 tommh8 tommh8. tommh8. r8 |
-                tommh8 tommh8 tommh8 tommh8 tommh8. tommh8. r8 |
-                tommh8. tommh8. r8 tommh8. tommh8. r8 |
+                tommh8 tommh8 tommh8 tommh8 \kap \kap r8 |
+                tommh8 tommh8 tommh8 tommh8 \kap \kap r8 |
+                tommh8 tommh8 tommh8 tommh8 \kap \kap r8 |
+                \kap \kap r8 \kap \kap r8 |
         }
 }
 

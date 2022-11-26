@@ -1,15 +1,15 @@
 KleinEins = \drummode {
         tommh2. tommh4
         tommh1
-        tommh4. tommh4 tommh4 tommh8
+        tommh4. tommh4 tommh4 \ka
         tommh1
 }
 
 Pferd = \drummode {
-        tommh8_"Pferd" \ks \ks
-        tommh8 \ks \ks
-        tommh8 \ks \ks
-        tommh8 \ks \ks
+        \ka_"Pferd" \ks \ks
+        \ka \ks \ks
+        \ka \ks \ks
+        \ka \ks \ks
 }
 
 Schluss = \drummode {
@@ -17,7 +17,7 @@ Schluss = \drummode {
         tommh1
         tommh4. tommh4 tommh4.
         tommh4. tommh4 tommh4.
-        tommh4. tommh4 tommh4 tommh8
+        tommh4. tommh4 tommh4 \ka
         tommh1
 }
 
