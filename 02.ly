@@ -33,11 +33,11 @@ GrossSechs = \drummode {
 }
 
 GrossSechsEins = \drummode {
-        tommh4 ss4
+        \kv ss4
 }
 
 GrossSechsZwei = \drummode {
-        tommh4 ss8 ss8
+        \kv ss8 ss8
 }
 
 TeilEins = {
