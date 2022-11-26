@@ -32,6 +32,9 @@ ks = { \drummode { tommh16 } }
 % Ganze (g)
 gg = { \drummode { tomfh1 } }
 
+% Punktierte Viertel (vp)
+gvp = { \drummode { tomfh4. } }
+
 % Achtel (a)
 ga = { \drummode { tomfh8 } }
 
