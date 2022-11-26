@@ -32,6 +32,9 @@ ks = { \drummode { tommh16 } }
 % Ganze (g)
 gg = { \drummode { tomfh1 } }
 
+% Punktierte Halbe (hp)
+ghp = { \drummode { tomfh2. } }
+
 % Punktierte Viertel (vp)
 gvp = { \drummode { tomfh4. } }
 

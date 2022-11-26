@@ -15,7 +15,7 @@ KleineTrommel = {
 GrossEins = \drummode {
 	tomfh4 \ga ~
 	\gvp
-	tomfh2.
+	\ghp
 }
 
 GrossZwei = \drummode {
