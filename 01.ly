@@ -10,9 +10,9 @@ KleinEins = \drummode {
 }
 
 KleinZwei = \drummode {
-        tommh8 tommh8
+        tommh8 tommh8 \accent
 	tommh16 tommh16 tommh16 tommh16
-        tommh8 tommh8
+        tommh8 tommh8 \accent
 	tommh16 tommh16 tommh16 tommh16
 }
 
