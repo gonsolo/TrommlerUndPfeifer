@@ -39,7 +39,7 @@ GrossZwei = \drummode {
 }
 
 GrossDrei = \drummode {
-        tomfh1
+        \gg
 }
 
 KleineTrommelNoten = {
