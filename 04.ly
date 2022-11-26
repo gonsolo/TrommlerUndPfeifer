@@ -1,7 +1,7 @@
 KleinEins = \drummode {
-        tommh2. tommh4
+        tommh2. \kv
         tommh1
-        \kvp tommh4 tommh4 \ka
+        \kvp \kv \kv \ka
         tommh1
 }
 
@@ -13,11 +13,11 @@ Pferd = \drummode {
 }
 
 Schluss = \drummode {
-        tommh2._"Schluss" tommh4
+        tommh2._"Schluss" \kv
         tommh1
-        \kvp tommh4 \kvp
-        \kvp tommh4 \kvp
-        \kvp tommh4 tommh4 \ka
+        \kvp \kv \kvp
+        \kvp \kv \kvp
+        \kvp \kv \kv \ka
         tommh1
 }
 

@@ -5,8 +5,8 @@
 	\new StaffGroup <<
                 \new DrumStaff << 
 			\drummode {
-				tommh4 tommh4 tommh4 \ka \tuplet 3/2 { \ks \ks \ks }
-				tommh4 tommh4 tommh4 \ka \ka
+				\kv \kv \kv \ka \tuplet 3/2 { \ks \ks \ks }
+				\kv \kv \kv \ka \ka
 			}
 		 >>
 	>>

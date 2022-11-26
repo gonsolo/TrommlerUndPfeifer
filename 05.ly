@@ -1,6 +1,6 @@
 Viertel = {
 	\drummode {
-		tommh4 tommh4 tommh4 tommh4
+		\kv \kv \kv \kv
 	}
 }
 
@@ -12,19 +12,19 @@ Halbe = {
 
 Dumdumadum = {
 	\drummode {
-                \ka \ks \ks tommh4 tommh2
+                \ka \ks \ks \kv tommh2
 	}
 }
 
 Dumdumdumdumadum = {
 	\drummode {
-                tommh4 tommh4 \ka \ks \ks tommh4
+                \kv \kv \ka \ks \ks \kv
 	}
 }
 
 Dumdumdumadumadum = {
 	\drummode {
-                tommh4 tommh4 \ks \ks \ks \ks tommh4
+                \kv \kv \ks \ks \ks \ks \kv
 	}
 }
 

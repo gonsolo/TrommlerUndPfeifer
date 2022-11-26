@@ -1,6 +1,6 @@
 GrossEins = \drummode {
         \ka \ks \ks
-        tommh4
+        \kv
 }
 
 GrossZwei = \drummode {

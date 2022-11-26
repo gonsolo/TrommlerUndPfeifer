@@ -3,9 +3,9 @@ KleinAuftakt = \drummode {
 }
 
 KleinEins = \drummode {
-        tommh4
-        tommh4
-        tommh4
+        \kv
+        \kv
+        \kv
 	\ks \ks \ks \ks
 }
 

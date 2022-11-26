@@ -7,7 +7,7 @@ KleineTrommelNoten = {
                 |
                 \ks \ks \ks \ks
                 r4
-                tommh4
+                \kv
                 \ks \ks \ks \ks
                 |
         
