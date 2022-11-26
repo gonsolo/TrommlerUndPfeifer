@@ -6,6 +6,10 @@ KleineTrommelNoten = {
         \repeat volta 4 {
                 \KleinEins
         }
+        \alternative {
+                \KleinEins
+
+        }
 }
 
 KleineTrommel = {
@@ -17,8 +21,10 @@ KleineTrommel = {
 }
 
 GrossEins = \drummode {
-        \repeat volta 4 {
-                r1
+        \repeat volta 4 {}
+        \alternative {
+                { r1 }
+                { r2 r4 \gv }
         }
 }
 
