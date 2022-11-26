@@ -3,13 +3,21 @@ KleinEins = \drummode {
 }
 
 KleineTrommelNoten = {
-        \repeat volta 4 {
-                \KleinEins
-        }
+        \repeat volta 4 {}
         \alternative {
                 \KleinEins
-
+                \KleinEins
         }
+        \repeat volta 4 {}
+        \alternative {
+                \KleinEins
+                \KleinEins
+        }
+        \KleinEins
+        \KleinEins
+        \KleinEins
+        \KleinEins
+        \kg
 }
 
 KleineTrommel = {
@@ -18,6 +26,14 @@ KleineTrommel = {
         \set Staff.midiPanPosition = 1.0
         \set Staff.midiExpression = 0.7
         \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
+}
+
+TupletEins = {
+        \tuplet 3/2 { \ga[ r8 \ga] }
+}
+
+TupletZwei = {
+          \tuplet 3/2 { \ga[ \ga \ga] }
 }
 
 GrossEins = \drummode {
@@ -29,10 +45,27 @@ GrossEins = \drummode {
 }
 
 GrossZwei = \drummode {
+        \repeat volta 4 {}
+        \alternative {
+                { \TupletEins \gv \gv \gv }
+                { \TupletEins \gv \gv \TupletZwei }
+        }
+}
+
+GrossDrei = \drummode {
+        \repeat volta 2 {
+                \TupletEins \gv \gv \TupletZwei
+                \TupletEins \gv \gv \TupletZwei
+                \TupletEins \TupletZwei \TupletEins \TupletZwei
+                \TupletEins \gv \gv \TupletZwei
+      }
 }
 
 GrosseTrommelNoten = {
         \GrossEins
+        \GrossZwei
+        \GrossDrei
+        \gg
 }
 
 GrosseTrommel = {
