@@ -31,6 +31,13 @@ GrossEins = \drummode {
 	\gs \gs \gs \gs
 }
 
+GrossEinsEnde = \drummode {
+        \ga_"Ende nach Zeichen" \gs \gs
+        \ga \gs \gs
+        \ga \gs \gs
+	\gs \gs \gs \gs
+}
+
 GrossZwei = \drummode {
         \ga \ga
 	\gs \gs \gs \gs
@@ -59,7 +66,7 @@ GrosseTrommelNoten = {
                 \GrossEins | \GrossEins | \GrossZwei |
         }
         \alternative {
-                { \GrossEins }
+                { \GrossEinsEnde }
                 { \GrossDrei }
         }
 }
