@@ -26,7 +26,7 @@ Steigerung = {
         	\ks \ks \ks \ks
         	\ks \ks \ks \ks |
 
-		tommh1\!
+		\kg\!
         }
 }
 

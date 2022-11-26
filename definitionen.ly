@@ -1,5 +1,8 @@
 % Kleine Trommel (k)
 
+% Ganze (g)
+kg = { \drummode { tommh1 } }
+
 % Viertel (v)
 kv = { \drummode { tommh4 } }
 

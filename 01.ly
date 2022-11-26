@@ -17,7 +17,7 @@ KleinZwei = \drummode {
 }
 
 KleinDrei = \drummode {
-        tommh1
+        \kg
 }
 
 GrossAuftakt = \drummode {
