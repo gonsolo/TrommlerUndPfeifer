@@ -4,7 +4,7 @@ TeilEins = {
 			\kv \ka \kv \ka \kv |
 			\ka \kv \ka \kv \kv |
 			\kv \ka \kv \ka \kv |
-			\ka \kv \ka tommh2 |
+			\ka \kv \ka \kh |
 		}
         }
 }

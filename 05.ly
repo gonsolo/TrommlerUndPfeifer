@@ -6,13 +6,13 @@ Viertel = {
 
 Halbe = {
 	\drummode {
-                tommh2 tommh2
+                \kh \kh
 	}
 }
 
 Dumdumadum = {
 	\drummode {
-                \ka \ks \ks \kv tommh2
+                \ka \ks \ks \kv \kh
 	}
 }
 

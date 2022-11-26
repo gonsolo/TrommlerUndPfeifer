@@ -29,7 +29,7 @@ GrossFuenf = \drummode {
 }
 
 GrossSechs = \drummode {
-        tommh2
+        \kh
 }
 
 GrossSechsEins = \drummode {
