@@ -1,7 +1,11 @@
 KleinEins = \drummode {
+        \tuplet 3/2 { \ka[ r8 \ka] ~ } \kv \kh
 }
 
 KleineTrommelNoten = {
+        \repeat volta 4 {
+                \KleinEins
+        }
 }
 
 KleineTrommel = {
@@ -13,21 +17,21 @@ KleineTrommel = {
 }
 
 GrossEins = \drummode {
-	\gv \ga ~
-	\gvp
-	\ghp
+        \repeat volta 4 {
+                r1
+        }
 }
 
 GrossZwei = \drummode {
 }
 
 GrosseTrommelNoten = {
-        \GrossEins | \GrossEins | \GrossEins | \GrossEins 
+        \GrossEins
 }
 
 GrosseTrommel = {
-	\tempo 4 = 180
-        \time 12/8
+	\tempo 4 = 120
+        \time 4/4
 	\set Staff.instrumentName = "Große Trommel"
 	\set Staff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = -1.0
@@ -40,7 +44,7 @@ GrosseTrommel = {
         }
 
 	\new StaffGroup <<
-                %\new DrumStaff << \KleineTrommel >>
+                \new DrumStaff << \KleineTrommel >>
                 \new DrumStaff << \GrosseTrommel >>
 	>>
 	\layout {
