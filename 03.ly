@@ -13,7 +13,7 @@ KleineTrommel = {
 }
 
 GrossEins = \drummode {
-	tomfh4 \ga ~
+	\gv \ga ~
 	\gvp
 	\ghp
 }

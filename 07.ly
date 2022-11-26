@@ -21,7 +21,7 @@ KleineTrommel = {
 
 GrossEins = \drummode {
         \ga \gs \gs
-        tomfh4
+        \gv
 }
 
 GrosseTrommelNoten = {

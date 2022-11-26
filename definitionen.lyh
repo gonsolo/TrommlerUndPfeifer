@@ -35,6 +35,9 @@ gg = { \drummode { tomfh1 } }
 % Punktierte Halbe (hp)
 ghp = { \drummode { tomfh2. } }
 
+% Viertel (v)
+gv = { \drummode { tomfh4 } }
+
 % Punktierte Viertel (vp)
 gvp = { \drummode { tomfh4. } }
 
