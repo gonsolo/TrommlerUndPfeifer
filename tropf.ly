@@ -23,12 +23,12 @@
 \include "15.ly"
 
 % 16: Dan
-% 17: Alte Noten
-% 18: Alte Noten
+% 17: Noten
+% 18: Noten
 % 19: ?
-% 20: ?
-% 21: Alte Aufnahme
-% 22: Alte Aufnahme
+% 20: Noten
+% 21: Aufnahme
+% 22: Aufnahme
 
 \include "klatschlied.ly"
 \include "vierer_medley.ly"
