@@ -35,6 +35,9 @@ ksx = { \drummode { \ks \accent } }
 % Ganze (g)
 gg = { \drummode { tomfh1 } }
 
+% Halbe (h)
+gh = { \drummode { tomfh2 } }
+
 % Punktierte Halbe (hp)
 ghp = { \drummode { tomfh2. } }
 
