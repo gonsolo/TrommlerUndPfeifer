@@ -1,8 +1,7 @@
 TeilEins = {
         \drummode {
-                \partial 8 \ka
                 \repeat volta 4 {
-	                \kap \kap \ka \kap \kap \ka |
+	                \ka \ks \ks \ka \ka r2 |
                 }
         }
 }
@@ -12,7 +11,7 @@ KleineTrommelNoten = {
 }
 
 KleineTrommel = {
-        \tempo 4 = 100
+        \tempo 4 = 120
 	\set DrumStaff.instrumentName = "Kleine Trommel"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
@@ -22,7 +21,7 @@ KleineTrommel = {
 
 \score {
         \header {
-                piece = "XII (TODO)"
+                piece = "XIII (TODO)"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>
