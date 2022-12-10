@@ -27,8 +27,8 @@
 \include "16.ly"
 \include "17.ly"
 \include "18.ly"
+\include "19.ly"
 
-% 19: ?
 % 20: Noten
 % 21: Aufnahme
 % 22: Aufnahme
