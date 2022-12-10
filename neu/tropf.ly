@@ -1,8 +1,17 @@
 \version "2.22.1"
 
+\paper {
+        print-page-number = ##f
+        score-markup-spacing = #'((basic-distance . 24))
+}
+
 \header {
 	title = "Trommler & Pfeifer"
-        tagline = ""
+        tagline = ##f
+}
+
+\markup {
+        \vspace #5
 }
 
 %\pageBreak
@@ -30,10 +39,9 @@
 \include "19.ly"
 \include "20.ly"
 \include "21.ly"
+\include "22.ly"
 
-% 22: Aufnahme
-
-%\include "klatschlied.ly"
-%\include "vierer_medley.ly"
-%\include "ungaresca.ly"
-%\include "heiduttentanz.ly"
+\include "klatschlied.ly"
+\include "vierer_medley.ly"
+\include "ungaresca.ly"
+\include "heiduttentanz.ly"

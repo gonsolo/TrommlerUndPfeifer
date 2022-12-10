@@ -1,9 +1,6 @@
 TeilEins = {
         \drummode {
-	        \kax \ka \ka   \kax \ka \kax   \ka  \ka  \kax  \kax \ka \ka  |
-	        \kax \ka \ka   \kax \ka \kax   \kax \ka  \kax  \kax \ka \ka  |
-	        \kax \ka \ka   \kax \ka \ka    \kax \ka  \ka   \kax \ka \kax |
-	        \kax \ka \kax  \kax \ka \ka    \kax \kax \kax  \kax \ka \ka |
+                r1
         }
 }
 
@@ -12,8 +9,7 @@ KleineTrommelNoten = {
 }
 
 KleineTrommel = {
-        \time 12/8
-        \tempo 4 = 140
+        \tempo 4 = 120
 	\set DrumStaff.instrumentName = "Kleine Trommel"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
@@ -21,10 +17,9 @@ KleineTrommel = {
         \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
 }
 
-\noPageBreak
 \score {
         \header {
-                piece = "XIV (TODO)"
+                piece = "XXII - Derselbe wie XX???"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>
