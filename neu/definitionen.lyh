@@ -27,6 +27,9 @@ kax = { \drummode { \ka \accent } }
 % Sechzehntel (s)
 ks = { \drummode { tommh16 } }
 
+% Akzentuierte Sechzehntel (sx)
+ksx = { \drummode { \ks \accent } }
+
 % Große Trommel (k) ===================
 
 % Ganze (g)
