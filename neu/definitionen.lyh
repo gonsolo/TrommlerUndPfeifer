@@ -53,6 +53,9 @@ gvp = { \drummode { tomfh4. } }
 % Achtel (a)
 ga = { \drummode { tomfh8 } }
 
+% Akzentuierte Achtel (ax)
+gax = { \drummode { \ga \accent } }
+
 % Punktierte Achtel (ap)
 gap = { \drummode { tomfh8. } }
 

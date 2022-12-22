@@ -4,7 +4,49 @@ KleineTrommelNoten = {
                 \kvp \kvp \kv
                 \kvp \kvp \kv
                 \kv \kv \kv \kv
+
+                \repeat volta 4 {
+                        \kvp \kvp \kv
+                        \kvp \kvp \kv
+                        \kvp \kvp \kv
+                        \kv \kv \kv \kv
+                }
+
+                \ks\< \ks \ks \ks \ks \ks \ks \ks
+                \ks \ks \ks \ks \ks \ks \ks \ks
+                \ks \ks \ks \ks \ks \ks \ks \ks
+                \ks \ks \ks \ks \ks \ks \ks \ks\!
+                \kg
         }
+}
+
+GrosseTrommelNoten = {
+        \drummode {
+                r1
+                r1
+                r1
+                r1
+        }
+
+        \repeat volta 4 {
+                \gax \ga \ga \gax \ga \ga \gax \ga
+                \gax \ga \ga \gax \ga \ga \gax \ga
+                \gax \ga \ga \gax \ga \ga \gax \ga
+        }
+        \alternative {
+                {
+                        \gax \gs \gs \gs \gs \gs \gs
+                        \gax \gs \gs \gs \gs \gs \gs
+                }
+                {
+                        \gs\< \gs \gs \gs \gs \gs \gs \gs
+                        \gs \gs \gs \gs \gs \gs \gs \gs
+                        \gs \gs \gs \gs \gs \gs \gs \gs
+                        \gs \gs \gs \gs \gs \gs \gs \gs\!
+                        \gg
+                }
+        }
+
 }
 
 KleineTrommel = {
@@ -16,16 +58,7 @@ KleineTrommel = {
         \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
 }
 
-GrossEins = \drummode {
-        \ga \gs \gs
-        \gv
-}
-
-GrosseTrommelNoten = {
-}
-
 GrosseTrommel = {
-        \tempo 4 = 120
 	\set Staff.instrumentName = "Große Trommel"
 	\set Staff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = -1.0
@@ -34,11 +67,11 @@ GrosseTrommel = {
 
 \score {
         \header {
-                piece = "VI (TODO: Wirbelschluss)"
+                piece = "VI"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>
-                %\new DrumStaff << \GrosseTrommel >>
+                \new DrumStaff << \GrosseTrommel >>
 	>>
 	\layout {
                 indent = 4.0\cm
