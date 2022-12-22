@@ -56,3 +56,7 @@ gap = { \drummode { tomfh8. } }
 % Sechzehntel (s)
 gs = { \drummode { tomfh16 } }
 
+% Akzentuierte Sechzehntel (sx)
+gsx = { \drummode { \gs \accent } }
+
+
