@@ -21,7 +21,6 @@ KleineTrommel = {
         \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
 }
 
-\noPageBreak
 \score {
         \header {
                 piece = "XIV (TODO)"
