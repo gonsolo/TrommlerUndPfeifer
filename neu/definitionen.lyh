@@ -6,6 +6,9 @@ kg = { \drummode { tommh1 } }
 % Halbe (h)
 kh = { \drummode { tommh2 } }
 
+% Akzentuierte Halbe (hx)
+khx = { \drummode { \kh \accent } }
+
 % Punktierte Halbe (hp)
 khp = { \drummode { tommh2. } }
 
