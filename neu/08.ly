@@ -1,16 +1,35 @@
 KleineTrommelNoten = {
         \drummode {
+        \time 7/4
                 \ks \ks \ks \ks
                 r4
                 \ks \ks \ks \ks
                 r4
+                \ks \ks \ks \ks
+                r4
+                \ka r8
                 |
+
+        \time 4/4
+                \kvp \kvp \ks \ks \ks \ks
+                \kvp \kvp \ks \ks \ks \ks
+                \kvp \kvp \ks \ks \ks \ks
+                \tuplet 3/2 { r4 \kv r4 }
+                \tuplet 3/2 { \kv r4 \kv }
+        }
+}
+
+GrosseTrommelNoten = {
+        \drummode {
+        \time 7/4
+                r4
                 \ks \ks \ks \ks
                 r4
-                \kv
                 \ks \ks \ks \ks
+                r4
+                \ks \ks \ks \ks
+                r8 \ka
                 |
-        
         }
 }
 
@@ -19,16 +38,7 @@ KleineTrommel = {
 	\set DrumStaff.instrumentName = "Kleine Trommel"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
-        \set Staff.midiExpression = 0.7
         \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
-}
-
-GrossEins = \drummode {
-        \ga \gs \gs
-        \gv
-}
-
-GrosseTrommelNoten = {
 }
 
 GrosseTrommel = {
@@ -44,7 +54,7 @@ GrosseTrommel = {
         }
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>
-                %\new DrumStaff << \GrosseTrommel >>
+                \new DrumStaff << \GrosseTrommel >>
 	>>
 	\layout {
                 indent = 4.0\cm
