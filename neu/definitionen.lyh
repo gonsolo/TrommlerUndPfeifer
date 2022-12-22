@@ -50,6 +50,9 @@ gvp = { \drummode { tomfh4. } }
 % Achtel (a)
 ga = { \drummode { tomfh8 } }
 
+% Punktierte Achtel (ap)
+gap = { \drummode { tomfh8. } }
+
 % Sechzehntel (s)
 gs = { \drummode { tomfh16 } }
 

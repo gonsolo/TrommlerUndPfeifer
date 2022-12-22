@@ -15,4 +15,4 @@ clean:
 	rm -f tropf.pdf *.midi
 e: edit
 edit:
-	vi 08.ly
+	vi 12.ly
