@@ -15,6 +15,9 @@ khp = { \drummode { tommh2. } }
 % Viertel (v)
 kv = { \drummode { tommh4 } }
 
+% Akzentuierte Viertel (vx)
+kvx = { \drummode { \kv \accent } }
+
 % Punktierte Viertel (vp)
 kvp = { \drummode { tommh4. } }
 
