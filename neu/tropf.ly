@@ -7,6 +7,13 @@
 
 \header {
 	title = "Trommler & Pfeifer"
+        subsubtitle = \markup {
+                \column {
+                        \line { Nur alt: 9, 10, 11 bissl, 17, 18 }
+                        \line { Keine Ahnung: 19???, 22??? }
+                        \line { Fehlt: 13, 14, 15, 21 }
+        }
+        }
         tagline = ##f
 }
 
