@@ -69,7 +69,7 @@ ZweiteStimme = {
 
 \score {
         \header {
-                piece = "VIII"
+                piece = "VIII (\"Battle\" oder \"Reise nach Jerusalem\")"
         }
         %\unfoldRepeats { % for midi
 	\new StaffGroup <<
