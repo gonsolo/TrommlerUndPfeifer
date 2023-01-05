@@ -23,15 +23,22 @@ TeilEins = {
                         \ksx \ks \ks \ks \ks \ks \ks \ks \ksx \ks \ks \ks \ks \ks \ks \ks
                 }
 
-                \ksx \ks \ks 
-                \ksx \ks \ks 
-                \ksx \ks \ks 
-                \ksx \ks \ks 
-                \ksx \ks \ks 
-                \ksx \ks \ks 
-                \ksx \ks \ks 
-                \ksx \ks \ks 
-                \khx
+                \tempo 4 = 160
+                \time 12/8
+                \kax \ka \ka
+                \kax \ka \ka
+                \kax \ka \ka
+                \kax \ka \ka
+                \kax \ka \ka
+                \kax \ka \ka
+                \kax \ka \ka
+                \kax \ka \ka
+
+                \kax \kax \kax
+                \ka \ka
+                \kax \kax \kax
+                \ka \ka
+                \kax \kax \kgx
 
         }
 }
@@ -41,7 +48,7 @@ KleineTrommelNoten = {
 }
 
 KleineTrommel = {
-        \tempo 4 = 100
+        \tempo 4 = 120
 	\set DrumStaff.instrumentName = "Kleine Trommel"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0

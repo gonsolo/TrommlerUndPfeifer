@@ -3,6 +3,9 @@
 % Ganze (g)
 kg = { \drummode { tommh1 } }
 
+% Akzentuierte Ganze (gx)
+kgx = { \drummode { \kg \accent } }
+
 % Halbe (h)
 kh = { \drummode { tommh2 } }
 

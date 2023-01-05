@@ -16,4 +16,4 @@ clean:
 	rm -f tropf.pdf *.midi
 e: edit
 edit:
-	vi traubenritt.ly
+	vi 16.ly
