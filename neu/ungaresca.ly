@@ -1,6 +1,6 @@
 \score {
         \header {
-                piece = "Ungaresca)"
+                piece = "Ungaresca"
         }
 	\new StaffGroup <<
                 \new DrumStaff << 
