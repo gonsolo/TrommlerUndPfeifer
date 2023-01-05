@@ -1,12 +1,12 @@
 \score {
         \header {
-                piece = "Ungaresca (TODO: Alles)"
+                piece = "Ungaresca)"
         }
 	\new StaffGroup <<
                 \new DrumStaff << 
 			\drummode {
-				\kv \kv \kv \ka \tuplet 3/2 { \ks \ks \ks }
-				\kv \kv \kv \ka \ka
+				\kv-"Vorspiel und hohe Noten" \kv \kv \ka \tuplet 3/2 { \ks \ks \ks }
+				\kv-"Tiefe Noten" \kv \kv \ka \ka
 			}
 		 >>
 	>>
