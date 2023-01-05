@@ -1,11 +1,39 @@
 TeilEins = {
         \drummode {
                 \repeat volta 8 {
-                        \ksx \ks  \ks  \ks
+                        \ksx \ks  \ks  \ksx
                         \ks  \ks  \ksx \ks
-                        \ks  \ks  \ks  \ks
-                        \ksx \ks  \ks  \ks |
+                        \ks  \ksx \ks  \ks
+                        \ksx \ks  \ks  \ksx
+
+                        \ksx \ks \ks  \ksx
+                        \ksx \ks \ks  \ksx
+                        \ksx \ks \ksx \ks
+                        \ksx \ks \ksx \ks
                 }
+                \repeat volta 4 {
+                        ss8.
+                        ss8.
+                        ss8.
+                        ss8.
+                        ss8. ss16
+
+                        ss8. ss16
+                        ss8. ss16
+                        ss8 ss8 ss8 ss8
+                }
+                \repeat volta 8 {
+                        \ks  \ks \ksx \ks
+                        \ks  \ksx \ks  \ks
+                        \ksx \ks \ks  \ksx
+                        \ks  \ks \ksx \ks
+
+                        \ks  \ksx \ksx \ks
+                        \ks  \ksx \ksx \ks
+                        \ks  \ksx \ks \ksx
+                        \ks  \ksx \ks \ksx
+                }
+                \kg
         }
 }
 
