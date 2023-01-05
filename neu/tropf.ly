@@ -40,7 +40,7 @@
 \include "08.ly"
 \pageBreak
 \include "09.ly"
-\pageBreak
+%\pageBreak
 \include "10.ly"
 \pageBreak
 \include "11.ly"
@@ -48,7 +48,7 @@
 \include "12.ly"
 \pageBreak
 \include "13.ly"
-\pageBreak
+%\pageBreak
 \include "14.ly"
 \pageBreak
 \include "15.ly"
@@ -56,19 +56,21 @@
 \include "16.ly"
 \pageBreak
 \include "17.ly"
-\pageBreak
+%\pageBreak
 \include "18.ly"
-\pageBreak
+%\pageBreak
 \include "19.ly"
 \pageBreak
 \include "20.ly"
 \pageBreak
 \include "21.ly"
-\pageBreak
+%\pageBreak
 \include "22.ly"
 \pageBreak
 
-\include "klatschlied.ly"
-\include "vierer_medley.ly"
+\include "medley04.ly"
+\include "medley09.ly"
+\include "medley14.ly"
+\include "medley15.ly"
 \include "ungaresca.ly"
 \include "heiduttentanz.ly"
