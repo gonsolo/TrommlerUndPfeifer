@@ -1,4 +1,4 @@
-KleineTrommelNoten = {
+ErsteStimmeNoten = {
         \drummode {
                 \repeat volta 4 {
                         \kg
@@ -19,16 +19,16 @@ KleineTrommelNoten = {
         }
 }
 
-KleineTrommel = {
+ErsteStimme = {
         \tempo 4 = 120
-	\set DrumStaff.instrumentName = "Kleine Trommel"
+	\set DrumStaff.instrumentName = "Erste Stimme"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
         \set Staff.midiExpression = 0.7
-        \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
+        \new DrumVoice = "ErsteStimme" \ErsteStimmeNoten
 }
 
-GrosseTrommelNoten = {
+ZweiteStimmeNoten = {
         \drummode {
                 \repeat volta 4 {
                         r4 \gv \gv \gv
@@ -49,22 +49,22 @@ GrosseTrommelNoten = {
         }
 }
 
-GrosseTrommel = {
+ZweiteStimme = {
         \tempo 4 = 120
-	\set DrumStaff.instrumentName = "Grosse Trommel"
+	\set DrumStaff.instrumentName = "Zweite Stimme"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
         \set Staff.midiExpression = 0.7
-        \new DrumVoice = "GrosseTrommel" \GrosseTrommelNoten
+        \new DrumVoice = "Zweite Stimme" \ZweiteStimmeNoten
 }
 
 \score {
         \header {
-                piece = "XX (TODO)"
+                piece = "XX"
         }
 	\new StaffGroup <<
-                \new DrumStaff << \KleineTrommel >>
-                \new DrumStaff << \GrosseTrommel >>
+                \new DrumStaff << \ErsteStimme >>
+                \new DrumStaff << \ZweiteStimme>>
 	>>
 	\layout {
                 indent = 4.0\cm
