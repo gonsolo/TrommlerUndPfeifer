@@ -81,31 +81,51 @@ TeilEinsStaff = {
 		\new Lyrics {
 			\lyricmode {
 				\set stanza  = "1. "
-				\forte _ _ _ _ _ _ _ \forte
+				\forte 
+                                _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _ _ _ _ _ _ _
+                                \forte
 			}
 		}
 		\new Lyrics {
 			\lyricmode {
 				\set stanza  = "2. "
-				\forte _ _ _ _ _ _ _ \piano
+				\forte
+                                _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _ _ _ _ _ _ _
+                                \piano
 			}
 		}
 		\new Lyrics {
 			\lyricmode {
 				\set stanza  = "3. "
-				\piano _ _ _ _ _ _ _ \forte
+				\piano
+                                _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _ _ _ _ _ _ _
+                                \forte
 			}
 		}
 		\new Lyrics {
 			\lyricmode {
 				\set stanza  = "4. "
-				\piano _ _ _ _ _ _ _ \piano
+				\piano
+                                _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _ _ _ _ _ _ _
+                                \piano
 			}
 		}
 		\new Lyrics {
 			\lyricmode {
 				\set stanza  = "5. "
-				\forte _ _ _ _ _ _ _ \forte
+				\forte
+                                _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _ _ _ _ _ _ _
+                                _ _ _ _ _ _ _ _ _ _
+                                \forte
 			}
 		}
 	>>
