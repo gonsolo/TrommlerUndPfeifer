@@ -34,7 +34,7 @@ AlleNoten = {
 
                 \time 4/4
                 \repeat volta 3 {
-                        \kax-"3x oder 4x?" \ka \kax \ka \kax \ka \kax \ka
+                        \kax-"3x" \ka \kax \ka \kax \ka \kax \ka
                 }
 
                 \repeat volta 2 {
