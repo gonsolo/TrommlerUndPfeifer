@@ -11,7 +11,7 @@
                 \column {
                         \line { Nur alt: 9, 10, 11 bissl, 17, 18 }
                         \line { Keine Ahnung: 19???, 22??? }
-                        \line { Fehlt: 14, 15, 21 }
+                        \line { Fehlt: 15, 21 }
         }
         }
         tagline = ##f
