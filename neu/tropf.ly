@@ -11,7 +11,7 @@
                 \column {
                         \line { Nur alt: 9, 10, 11 bissl, 17, 18 }
                         \line { Keine Ahnung: 19???, 22??? }
-                        \line { Fehlt: 13, 14, 15, 21 }
+                        \line { Fehlt: 14, 15, 21 }
         }
         }
         tagline = ##f
@@ -48,7 +48,7 @@
 \include "12.ly"
 \pageBreak
 \include "13.ly"
-%\pageBreak
+\pageBreak
 \include "14.ly"
 \pageBreak
 \include "15.ly"
