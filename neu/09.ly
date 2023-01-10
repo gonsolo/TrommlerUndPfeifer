@@ -1,9 +1,27 @@
 KleineTrommelNoten = {
         \drummode {
-                \kvp \kvp \kvp \kv \ka |
-                \kvp \kvp \kvp \kv \ka |
-                \kvp \kvp \kvp \kv \ka |
-                \kv \ka ~ \kv \ka \kv \ka ~ \kv \ka |
+		\repeat volta 2 {
+			\kvp \kvp \kvp \kv \ka |
+			\kvp \kvp \kvp \kv \ka |
+			\kvp \kvp \kvp \kv \ka |
+			\kv \ka ~ \kv \ka \kv \ka ~ \kv \ka |
+			\kv \ka \ka \ka \ka \khp
+		}
+		\repeat volta 2 {
+			\kvp \kv \ka \kv \ka r4. |
+			\kvp \kv \ka \kv \ka r4. |
+			\kvp \kvp \kvp \kvp |
+			\kvp \kv \ka \kv \ka r4 \ka |
+		}
+		\repeat volta 2 {
+			\kv \ka r4 \ka \kv \ka r4 \ka |
+			\kv \kv \kv \kv \kvp \ka |
+			\kv \ka r4 \ka \kv \ka r4 \ka |
+		}
+		\alternative {
+			{ \kv \kv \kv \ka ss4 ss8 ss8 \ka | }
+			{ \kv \kv \kv \khp | }
+		}
         }
 }
 
@@ -17,31 +35,13 @@ KleineTrommel = {
         \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
 }
 
-GrossEins = \drummode {
-}
-
-GrossZwei = \drummode {
-}
-
-GrosseTrommelNoten = {
-        \GrossEins | \GrossEins | \GrossEins | \GrossEins 
-}
-
-GrosseTrommel = {
-	\set Staff.instrumentName = "Große Trommel"
-	\set Staff.midiInstrument = "melodic tom"
-        \set Staff.midiPanPosition = -1.0
-        \new DrumVoice = "GrosseTrommel " \GrosseTrommelNoten
-}
-
 \score {
         \header {
-                piece = "IX (TODO)"
+                piece = "IX"
         }
 
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>
-                %\new DrumStaff << \GrosseTrommel >>
 	>>
 	\layout {
                 indent = 4.0\cm

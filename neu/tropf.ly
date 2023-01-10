@@ -9,7 +9,7 @@
 	title = "Trommler & Pfeifer"
         subsubtitle = \markup {
                 \column {
-                        \line { Nur alt: 9, 17, 18 }
+                        \line { Nur alt: 17, 18 }
                         \line { Keine Ahnung: 19???, 22??? }
 		}
         }
