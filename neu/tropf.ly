@@ -9,10 +9,9 @@
 	title = "Trommler & Pfeifer"
         subsubtitle = \markup {
                 \column {
-                        \line { Nur alt: 9, 10, 11 bissl, 17, 18 }
+                        \line { Nur alt: 9, 17, 18 }
                         \line { Keine Ahnung: 19???, 22??? }
-                        \line { Fehlt: 15, 21 }
-        }
+		}
         }
         tagline = ##f
 }
@@ -40,7 +39,7 @@
 \include "08.ly"
 \pageBreak
 \include "09.ly"
-%\pageBreak
+\pageBreak
 \include "10.ly"
 \pageBreak
 \include "11.ly"

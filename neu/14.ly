@@ -27,8 +27,8 @@ TeilZwei = {
 }
 
 Schluss = {
-        \kax \kax \kax  \kvpx \kax \kax \kax  \kvpx |
-        \kax \kax \kax  \kvpx r2 |
+        \kax \kax \kax \kvpx	\kax \kax \kax  \kvpx |
+        \kax \kax \kax \kvpx	r2. |
 
 }
 
@@ -57,7 +57,7 @@ KleineTrommel = {
 
 \score {
         \header {
-                piece = "XIV (TODO)"
+                piece = "XIV"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>

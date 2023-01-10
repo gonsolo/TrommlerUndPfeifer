@@ -58,7 +58,7 @@ KleineTrommel = {
 
 \score {
         \header {
-                piece = "XVI (TODO)"
+                piece = "XVI"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>
