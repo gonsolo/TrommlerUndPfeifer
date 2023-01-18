@@ -1,27 +1,33 @@
 TeilEins = {
         \drummode {
                 \repeat volta 2 {
-                        \kvp \kvp r4
-                        r1
+			\parenthesize tommh4.-"Georg" \parenthesize tommh4. r4
+                        \kvp-"Alle" \kvp r4
                 }
-                \ks \ks r4 \ks \ks r4 r4
-                r1
-                \ks \ks r4 \ks \ks r4 ss4
-
-                \repeat volta 8 {
+		\repeat volta 2 {
+			\parenthesize \ks-"Georg" \parenthesize \ks r8 r8 \parenthesize \ks \parenthesize \ks r2
+		}
+		\alternative {
+			{ \ks-"Alle" \ks r8 r8 \ks \ks r2 }
+			{ \ks \ks r8 r8 \ks \ks r4 ss4 }
+		}
+		\repeat volta 2 {
+			\inStaffSegno
+                \repeat volta 4 {
                         \ksx \ks \ks \ks \ks \ks \ksx \ks \ks \ks \ks \ks \ksx \ks \ks \ks
                         \ksx \ks \ks \ks \ks \ks \ks \ks \ksx \ks \ks \ks \ks \ks \ks \ks
                 }
-
-                \kg
-                \repeat volta 7 {
-                        r1
+                \repeat volta 4 {
+                        \ksx \ksx \ks \ks \ks \ks \ksx \ksx \ks \ks \ks \ksx \ksx \ks \ks \ksx
+                        \ksx \ks \ks \ksx \ks \ksx \ks \ksx \ksx \ks \ks \ks \ks \ks \ks \ks
                 }
-
-                \repeat volta 8 {
-                        \ksx \ks \ks \ks \ks \ks \ksx \ks \ks \ks \ks \ks \ksx \ks \ks \ks
-                        \ksx \ks \ks \ks \ks \ks \ks \ks \ksx \ks \ks \ks \ks \ks \ks \ks
-                }
+		\repeat volta 2 {
+			\kvp-"Reihum" \kvp \kv
+			\kh \kh
+			\kvp \kvp \kv
+			\kg-"D.S."
+		}
+	}
 
                 \tempo 4 = 160
                 \time 12/8
