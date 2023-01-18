@@ -1,6 +1,7 @@
 KleineTrommelNoten = {
         \drummode {
-                r1
+                \ka \ka ss4 \ka \ka ss4
+                \ka \ka ss4 \ka \ka ss4
         }
 }
 
@@ -15,7 +16,7 @@ KleineTrommel = {
 
 \score {
         \header {
-                piece = "XIX: Gibbet nich!"
+                piece = "XIX (We will rock you)"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>

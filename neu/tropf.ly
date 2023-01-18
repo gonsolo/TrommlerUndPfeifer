@@ -10,7 +10,6 @@
         subsubtitle = \markup {
                 \column {
                         \line { Nur alt: 17, 18 }
-                        \line { Keine Ahnung: 19???, 22??? }
 		}
         }
         tagline = ##f
@@ -63,8 +62,6 @@
 \include "20.ly"
 \pageBreak
 \include "21.ly"
-\pageBreak
-\include "22.ly"
 \pageBreak
 
 \include "medley04.ly"
