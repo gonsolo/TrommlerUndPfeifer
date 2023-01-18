@@ -1,18 +1,18 @@
 AlleNoten = {
         \drummode {
-                \ka\< \ka \ka \ka \ka  \ka \ka  \kax\!
+                \kax\< \ka \ka \ka \ka  \ka \ka  \kax\!
                 \kax  \ka \ka \ka \ka  \ka \ka  \kax
                 \kax  \ka \ka \ka \ka  \ka \ka  \kax
                 \kax  \ka \ka \ka \kax \ka \kax \ka
 
                 \kax \ka \ka \ka \ka \ka \ka \ks \ks
-                \ka \ka \ka \ka \ka \ka \ka \ks \ks
-                \ka \ka \ka \ka \kv \ka \ks \ks
-                \ka \ka \ka \ks \ks \ka \ka \ka \ks \ks 
+                \kax \kax \kax \kax \kax \kax \kax \ks \ks
+                \kax \kax \kax \kax \kvx \kax \ks \ks
+                \kax \kax \kax \ks \ks \kax \kax \kax \ks \ks
 
-                \ka \ka \ka \ka \ka \ka \ka \ka
+                \kax \kax \kax \kax \kax \kax \kax \kax
 
-                \ka \ks \ks \kv
+                \kax \ks \ks \kvx
 
                 r8 \ks \ks \ks \ks \ks \ks
                 \ks \ks \ks \ks \ka \ks \ks
@@ -27,14 +27,14 @@ AlleNoten = {
 
                 \time 4/4
                 \kax \ka \ka \ka \ka \ka \ka  \kax
-                \kax \ka \ka \ka \ka \ka \ka  \kax
-                \kax \ka \ka \ka \kvx \kvx
+                \kax \ks \ks \ka \ka \ka \ka \ka  \kax
+                \kax \ks \ks \ka \ka \kvx \kvx
                 \time 3/4
                 \kvx r4-"Ho" r4-"Hei"
 
                 \time 4/4
                 \repeat volta 3 {
-                        \kax-"3x" \ka \kax \ka \kax \ka \kax \ka
+                        \kvx-"3x" \kvx \kvx \kvx
                 }
 
                 \repeat volta 2 {
@@ -45,7 +45,7 @@ AlleNoten = {
                 }
 
                 \ka \ks \ks \ka \ka \ka \ks \ks \ka \ka
-                \kv \kv \kh
+                \kv \kv \kh-"Fine"
 
                 \kh-"Solo sostenuto" \kv \kv
                 \kh \kh
