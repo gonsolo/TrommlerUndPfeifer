@@ -2,18 +2,27 @@ TROMMLER_STUECKE = 01.ly 02.ly 03.ly 04.ly 05.ly 06.ly 07.ly 08.ly 09.ly 10.ly 1
 	 16.ly 17.ly 18.ly 19.ly 20.ly 21.ly
 PFEIFER_STUECKE = medley04.ly medley09.ly medley14.ly medley15.ly ringeltanz.ly traubenritt.ly ungaresca.ly heiduttentanz.ly
 
-all: view
+%all: view
+all: listen
 view: tropf.pdf
 	open $<
 l: listen
-listen: tropf.midi
-	timidity $<
+#listen: tropf.midi
+#	timidity $<
+#listen: tropf.wav
+#	pw-play $<
+listen: tropf.mp3
+	cvlc tropf.mp3
 tropf.pdf tropf.midi: tropf.ly definitionen.lyh $(TROMMLER_STUECKE) $(PFEIFER_STUECKE) 
 	lilypond $<
+tropf.wav: tropf.midi
+	timidity -Ow -o $@ $<
+tropf.mp3: tropf.wav
+	ffmpeg -i $< $@
 .PHONY: c clean e edit l listen
 c: clean
 clean:
 	rm -f tropf.pdf *.midi
 e: edit
 edit:
-	vi 09.ly
+	vi 01.ly
