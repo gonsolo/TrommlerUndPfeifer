@@ -95,12 +95,12 @@ GrosseTrommel = {
         \header {
                 piece = "I"
         }
-	\unfoldRepeats { % for midi
+	%\unfoldRepeats { % for midi
 	\new StaffGroup <<
                 \new DrumStaff << \KleineTrommel >>
                 \new DrumStaff << \GrosseTrommel >>
 	>>
-}
+	%}
 	\layout {
                 indent = 4.0\cm
         }
