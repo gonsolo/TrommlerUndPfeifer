@@ -22,7 +22,7 @@ tropf.mp3: tropf.wav
 .PHONY: c clean e edit l listen
 c: clean
 clean:
-	rm -f tropf.pdf *.midi
+	rm -f tropf.pdf *.midi *.wav *.mp3
 e: edit
 edit:
 	vi 01.ly
