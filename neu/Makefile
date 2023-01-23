@@ -25,4 +25,4 @@ clean:
 	rm -f tropf.pdf *.midi *.wav *.mp3
 e: edit
 edit:
-	vi 01.ly
+	vi 09.ly

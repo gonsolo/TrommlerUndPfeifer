@@ -1,26 +1,26 @@
 KleineTrommelNoten = {
         \drummode {
 		\repeat volta 2 {
-			\kvp \kvp \kvp \kv \ka |
-			\kvp \kvp \kvp \kv \ka |
-			\kvp \kvp \kvp \kv \ka |
-			\kv \ka ~ \kv \ka \kv \ka ~ \kv \ka |
-			\kv \ka \ka \ka \ka \khp
+			\kax \ka \ka \kax \ka \ka \kax \ka \ka \kax \ka \kax |
+			\kax \ka \ka \kax \ka \ka \kax \ka \ka \kax \ka \kax |
+			\kax \ka \ka \kax \ka \ka \kax \ka \ka \kax \ka \kax |
+			\kax \ka \kax \ka \ka \kax \kax \ka \kax \ka \ka \kax |
+			\kax \ka \kax \kax \kax \kax \kax \ka \ka \ka \ka \ka |
 		}
 		\repeat volta 2 {
-			\kvp \kv \ka \kv \ka r4. |
-			\kvp \kv \ka \kv \ka r4. |
-			\kvp \kvp \kvp \kvp |
-			\kvp \kv \ka \kv \ka r4 \ka |
+			\kax \ka \ka \kax \ka \kax \kax \ka \kax \ka \ka \ka |
+			\kax \ka \ka \kax \ka \kax \kax \ka \kax \ka \ka \ka |
+			\kax \ka \ka \kax \ka \ka \kax \ka \ka \kax \ka \ka |
+			\kax \ka \ka \kax \ka \kax \kax \ka \kax \ka \ka \kax |
 		}
 		\repeat volta 2 {
-			\kv \ka r4 \ka \kv \ka r4 \ka |
-			\kv \kv \kv \kv \kvp \ka |
-			\kv \ka r4 \ka \kv \ka r4 \ka |
+			\kax \ka \kax \ka \ka \kax \kax \ka \kax \ka \ka \kax |
+			\kax \ka \kax \ka \kax \ka \kax \ka \kax \ka \ka \kax |
+			\kax \ka \kax \ka \ka \kax \kax \ka \kax \ka \ka \kax |
 		}
 		\alternative {
-			{ \kv \kv \kv \ka ss4 ss8 ss8 \ka | }
-			{ \kv \kv \kv \khp | }
+			{ \kax \ka \kax \ka \kax \ka \kax ss4 ss8 ss8 \kax | }
+			{ \kax \ka \kax \ka \kax \ka \khpx | }
 		}
         }
 }

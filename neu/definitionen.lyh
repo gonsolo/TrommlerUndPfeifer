@@ -15,6 +15,9 @@ khx = { \drummode { \kh \accent } }
 % Punktierte Halbe (hp)
 khp = { \drummode { tommh2. } }
 
+% Punktierte akzentuierte Halbe (hpx)
+khpx = { \khp \accent }
+
 % Viertel (v)
 kv = { \drummode { tommh4 } }
 
