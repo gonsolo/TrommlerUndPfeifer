@@ -1,6 +1,6 @@
 \score {
         \header {
-                piece = "XV Medley \"Schiarazula Marazula\""
+                piece = "XV Medley \"Schiarazula Marazula\" (Zweiter Teil mit Pfeifen länger)"
         }
 	\new StaffGroup <<
                 \new DrumStaff << r1 >>
