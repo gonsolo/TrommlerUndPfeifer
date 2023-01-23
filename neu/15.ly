@@ -29,9 +29,9 @@ KleineTrommelNoten = {
                         }
                 }
                 \repeat volta 4 {
-                        \ka \ka \ka \ka \kap \kap r8 |
-                        \ka \ka \ka \ka \kap \kap r8 |
-                        \ka \ka \ka \ka \kap \kap r8 |
+			\kax \ka \kax \ka \kax \ka \kax \ka \kax \ka \ka \kax \ka \ka \ka \kax
+			\kax \ka \kax \ka \kax \ka \kax \ka \kax \ka \ka \kax \ka \ka \ka \kax
+			\kax \ka \kax \ka \kax \ka \kax \ka \kax \ka \ka \kax \ka \ka \ka \kax
                         \ks \ka \ks \ks \ka \ks \ks \ka \ks \ks \ka \ks |
                 }
                 \kg

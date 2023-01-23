@@ -1,91 +1,88 @@
-KleineTrommelNoten = {
+ErsteStimmeNoten = {
         \drummode {
                 \partial 8 \ka
-                \repeat volta 16 {}
-                \alternative {
-                        { \kap \kap \ka \kap \kap \ka }
-                        { \kap \kap \ka \kap \kap ss8 }
-                }
+                \repeat volta 16 {
+                        \kap \kap \ka \kap \kap \ka
+		}
                 \repeat volta 4 {}
                 \alternative {
                         { ss8. ss8. ss8 ss8. ss8. ss8 }
                         { ss8. ss8. ss8 ss8. ss8. \ka }
                 }
-                \repeat volta 16 {}
-                \alternative {
-                        { \kap \kap \ka \kap \kap \ka }
-                        { \kap \kap \ka \kap \kap ss8 }
-                }
-                ss8. ss8. ss8 ss8 ss16 ss16 ss4
+		\repeat volta 4 {
+			\kv ss4 ss4 ss8 \tuplet 3/2 { \ks \ks \ks }
+		}
+		\repeat volta 4 {
+			\kv ss8 \tuplet 3/2 { \ks \ks \ks } \kv ss8 \tuplet 3/2 { \ks \ks \ks }
+		}
+		\kg
         }
 }
 
-GroßeTrommelNoten = {
+ZweiteStimmeNoten = {
         \drummode {
                 \partial 8 \ga
-                \repeat volta 16 {}
-                \alternative {
-                        { \gap \gap \ga \ga \gs \gs \ga \ga }
-                        { \gap \gap \ga \ga \gs \gs \ga ss8 }
-                }
+                \repeat volta 16 {
+                        \gap \gap \ga \ga \gs \gs \ga \ga
+		}
                 \repeat volta 4 {}
                 \alternative {
                         { ss8. ss8. ss8 ss8 ss16 ss16 ss8 ss8 }
                         { ss8. ss8. ss8 ss8 ss16 ss16 ss8 \ga }
                 }
-                \repeat volta 16 {}
-                \alternative {
-                        { \gap \gap \ga \ga \gs \gs \ga \ga }
-                        { \gap \gap \ga \ga \gs \gs \ga ss8 }
-                }
-                ss8. ss8. ss8 ss8 ss16 ss16 ss4
-        }
+		\repeat volta 4 {
+			\kv ss4 ss4 ss4
+		}
+		\repeat volta 4 {
+			ss8 \tuplet 3/2 { \ks \ks \ks } \kv ss8 \tuplet 3/2 { \ks \ks \ks } \kv
+		}
+		\kg
+	}
 }
 
-GroßeTrommelNotenSechzehntel = {
+DritteStimmeNoten = {
         \drummode {
                 \partial 8 \ga
-                \repeat volta 16 {}
-                \alternative {
-                        { \gsx \gs \gs \gsx \gs \gs \gsx \gs \gs \gs \gsx \gs \gsx \gs \gs \gs }
-                        { \gsx \gs \gs \gsx \gs \gs \gsx \gs \gs \gs \gsx \gs \gsx \gs ss8 }
-                }
+                \repeat volta 16 {
+                        \gsx \gs \gs \gsx \gs \gs \gsx \gs \gs \gs \gsx \gs \gsx \gs \gs \gs
+		}
                 \repeat volta 4 {}
                 \alternative {
                         { ss8. ss8. ss8 ss8 ss16 ss16 ss8 ss8 }
                         { ss8. ss8. ss8 ss8 ss16 ss16 ss8 \ga }
                 }
-                \repeat volta 16 {}
-                \alternative {
-                        { \gsx \gs \gs \gsx \gs \gs \gsx \gs \gs \gs \gsx \gs \gsx \gs \gs \gs }
-                        { \gsx \gs \gs \gsx \gs \gs \gsx \gs \gs \gs \gsx \gs \gsx \gs ss8 }
-                }
-                ss8. ss8. ss8 ss8 ss16 ss16 ss4
-        }
+		\repeat volta 4 {
+			\kv ss4 ss4 ss8 \tuplet 3/2 { \ks \ks \ks }
+		}
+		\repeat volta 4 {
+			\kv ss8 \tuplet 3/2 { \ks \ks \ks } \kv ss8 \tuplet 3/2 { \ks \ks \ks }
+		}
+		\kg
+ }
 }
 
-KleineTrommel = {
+ErsteStimme = {
         \tempo 4 = 100
-	\set DrumStaff.instrumentName = "Kleine Trommel"
+	\set DrumStaff.instrumentName = "Erste Stimme"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
-        \new DrumVoice = "KleineTrommel" \KleineTrommelNoten
+        \new DrumVoice = "ErsteStimme" \ErsteStimmeNoten
 }
 
-GroßeTrommel = {
+ZweiteStimme = {
         \tempo 4 = 100
-	\set DrumStaff.instrumentName = "Grosse Trommel"
+	\set DrumStaff.instrumentName = "Zweite Stimme"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = -1.0
-        \new DrumVoice = "GrosseTrommel" \GroßeTrommelNoten
+        \new DrumVoice = "GrosseTrommel" \ZweiteStimmeNoten
 }
 
-GroßeTrommelSechzehntel = {
+DritteStimme = {
         \tempo 4 = 100
-	\set DrumStaff.instrumentName = "Sechzehntel"
+	\set DrumStaff.instrumentName = "Dritte Stimme"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = -1.0
-        \new DrumVoice = "GrosseTrommelSechzehntel" \GroßeTrommelNotenSechzehntel
+        \new DrumVoice = "DritteStimme" \DritteStimmeNoten
 }
 
 \score {
@@ -93,9 +90,9 @@ GroßeTrommelSechzehntel = {
                 piece = "XII"
         }
 	\new StaffGroup <<
-                \new DrumStaff << \KleineTrommel >>
-                \new DrumStaff << \GroßeTrommel >>
-                \new DrumStaff << \GroßeTrommelSechzehntel >>
+                \new DrumStaff << \ErsteStimme >>
+                \new DrumStaff << \ZweiteStimme >>
+                \new DrumStaff << \DritteStimme>>
 	>>
 	\layout {
                 indent = 4.0\cm
