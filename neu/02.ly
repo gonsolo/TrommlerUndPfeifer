@@ -74,7 +74,7 @@ TeilEinsStaff = {
 
 \score {
         \header {
-                piece = "II"
+                piece = "II (Laut Leise)"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \TeilEinsStaff >>

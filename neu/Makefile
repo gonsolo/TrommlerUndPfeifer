@@ -15,14 +15,17 @@ listen: tropf.mp3
 	cvlc tropf.mp3
 tropf.pdf tropf.midi: tropf.ly definitionen.lyh $(TROMMLER_STUECKE) $(PFEIFER_STUECKE) 
 	lilypond $<
+book: tropf-book.pdf
+tropf-book.pdf: tropf.pdf
+	pdfbook2 $<
 tropf.wav: tropf.midi
 	timidity -Ow -o $@ $<
 tropf.mp3: tropf.wav
 	ffmpeg -i $< $@
-.PHONY: c clean e edit l listen
+.PHONY: book c clean e edit l listen
 c: clean
 clean:
-	rm -f tropf.pdf *.midi *.wav *.mp3
+	rm -f tropf.pdf tropf-book.pdf *.midi *.wav *.mp3
 e: edit
 edit:
 	vi 12.ly

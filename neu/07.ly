@@ -64,7 +64,7 @@ Alle = {
 
 \score {
         \header {
-                piece = "VII"
+                piece = "VII (Amorpher Bads)"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \Alle >>

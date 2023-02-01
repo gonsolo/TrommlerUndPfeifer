@@ -94,7 +94,7 @@ VierteStimme = {
 
 \score {
         \header {
-                piece = "X"
+                piece = "X (Vierstimmer)"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \ErsteStimme>>

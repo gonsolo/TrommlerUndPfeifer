@@ -93,7 +93,7 @@ GrosseTrommel = {
 
 \score {
         \header {
-                piece = "I"
+                piece = "I (Auftakt)"
         }
 	%\unfoldRepeats { % for midi
 	\new StaffGroup <<

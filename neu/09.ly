@@ -37,7 +37,7 @@ KleineTrommel = {
 
 \score {
         \header {
-                piece = "IX"
+                piece = "IX (EinsZweiDreiVierDie)"
         }
 
 	\new StaffGroup <<

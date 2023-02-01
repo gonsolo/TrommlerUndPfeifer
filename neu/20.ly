@@ -60,7 +60,7 @@ ZweiteStimme = {
 
 \score {
         \header {
-                piece = "XX"
+                piece = "XX (Snareübung mit zwei Stimmen)"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \ErsteStimme >>

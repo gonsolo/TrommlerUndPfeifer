@@ -87,7 +87,7 @@ DritteStimme = {
 
 \score {
         \header {
-                piece = "XII"
+                piece = "XII (Und EinsDieUnd DreiUndDieVierUnd)"
         }
 	\new StaffGroup <<
                 \new DrumStaff << \ErsteStimme >>
