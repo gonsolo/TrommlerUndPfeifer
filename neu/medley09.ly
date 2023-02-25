@@ -1,6 +1,6 @@
 \score {
         \header {
-                piece = "IX Medley \"Klatschlied\" (TODO: Anfang fehlt, Sticks lange)"
+                piece = "IX Medley \"Klatschlied\" (TODO: Anfang Pausen)"
         }
 	\new StaffGroup <<
                 \new DrumStaff << r1 >>
