@@ -35,7 +35,7 @@
 %\pageBreak
 %\include "07.ly"
 %\pageBreak
-%\include "08.ly"
+\include "08.ly"
 %\pageBreak
 %\include "09.ly"
 %\pageBreak
@@ -69,7 +69,7 @@
 %\include "medley14.ly"
 %\include "medley15.ly"
 %\pageBreak
-\include "ringeltanz.ly"
+%\include "ringeltanz.ly"
 %\include "ungaresca.ly"
 %\include "traubenritt.ly"
 %\include "heiduttentanz.ly"
