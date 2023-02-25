@@ -15,7 +15,7 @@ TeilEins = {
 			\inStaffSegno
                 \repeat volta 4 {
                         \ksx \ks \ks \ks \ks \ks \ksx \ks \ks \ks \ks \ks \ksx \ks \ks \ks
-                        \ksx \ks \ks \ks \ks \ks \ks \ks \ksx \ks \ks \ks \ks \ks \ks \ks
+                        \ksx \ks \ks \ks \ks \ks \ks \ks \ksx\< \ks \ks \ks \ks \ks \ks \ks\!
                 }
                 \repeat volta 4 {
                         \ksx \ksx \ks \ks \ks \ks \ksx \ksx \ks \ks \ks \ksx \ksx \ks \ks \ksx
@@ -41,9 +41,9 @@ TeilEins = {
                 \kax \ka \ka
 
                 \kax \kax \kax
-                \ka \ka
+                r8 r8 %\ka \ka
                 \kax \kax \kax
-                \ka \ka
+                r8 r8 %\ka \ka
                 \kax \kax \kgx
 
         }
