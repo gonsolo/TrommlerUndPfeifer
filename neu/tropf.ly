@@ -35,7 +35,7 @@
 %\pageBreak
 %\include "07.ly"
 %\pageBreak
-\include "08.ly"
+%\include "08.ly"
 %\pageBreak
 %\include "09.ly"
 %\pageBreak
@@ -51,7 +51,7 @@
 %\pageBreak
 %\include "15.ly"
 %\pageBreak
-%\include "16.ly"
+\include "16.ly"
 %\pageBreak
 %\include "17.ly"
 %%\pageBreak

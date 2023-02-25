@@ -3,11 +3,17 @@
 % Ganze (g)
 kg = { \drummode { tommh1 } }
 
+% Ganze mit Flam
+kgf = { \drummode { \acciaccatura tommh8( tommh1)^> } }
+
 % Akzentuierte Ganze (gx)
 kgx = { \drummode { \kg \accent } }
 
 % Halbe (h)
 kh = { \drummode { tommh2 } }
+
+% Halbe mit Flam
+khf = { \drummode { \acciaccatura tommh8( tommh2)^> } }
 
 % Akzentuierte Halbe (hx)
 khx = { \drummode { \kh \accent } }
@@ -21,11 +27,17 @@ khpx = { \khp \accent }
 % Viertel (v)
 kv = { \drummode { tommh4 } }
 
+% Viertel mit Flam
+kvf = { \drummode { \acciaccatura tommh8( tommh4)^> } }
+
 % Akzentuierte Viertel (vx)
 kvx = { \drummode { \kv \accent } }
 
 % Punktierte Viertel (vp)
 kvp = { \drummode { tommh4. } }
+
+% Punktierte Viertel mit Flam (vpf)
+kvpf = { \drummode { \acciaccatura tommh8( tommh4.)^> } }
 
 % Punktierte akzentuierte Viertel (vpx)
 kvpx = { \kvp \accent }

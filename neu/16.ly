@@ -13,21 +13,25 @@ TeilEins = {
 		}
 		\repeat volta 2 {
 			\inStaffSegno
-                \repeat volta 4 {
-                        \ksx \ks \ks \ks \ks \ks \ksx \ks \ks \ks \ks \ks \ksx \ks \ks \ks
-                        \ksx \ks \ks \ks \ks \ks \ks \ks \ksx\< \ks \ks \ks \ks \ks \ks \ks\!
-                }
-                \repeat volta 4 {
-                        \ksx \ksx \ks \ks \ks \ks \ksx \ksx \ks \ks \ks \ksx \ksx \ks \ks \ksx
-                        \ksx \ks \ks \ksx \ks \ksx \ks \ksx \ksx \ks \ks \ks \ks \ks \ks \ks
-                }
-		\repeat volta 2 {
+			\repeat volta 4 {
+                	        \ksx \ks \ks \ks \ks \ks \ksx \ks \ks \ks \ks \ks \ksx \ks \ks \ks
+                	        \ksx \ks \ks \ks \ks \ks \ks \ks \ksx\< \ks \ks \ks \ks \ks \ks \ks\!
+                	}
+                	\repeat volta 4 {
+                	        \ksx \ksx \ks \ks \ks \ks \ksx \ksx \ks \ks \ks \ksx \ksx \ks \ks \ksx
+                	        \ksx \ks \ks \ksx \ks \ksx \ks \ksx \ksx \ks \ks \ks \ks \ks \ks \ks
+                	}
+
 			\kvp-"Reihum" \kvp \kv
 			\kh \kh
 			\kvp \kvp \kv
-			\kg-"D.S."
+			\kg
+
+			\kvpf \kvpf \kvf
+			\khf \khf
+			\kvpf \kvpf \kvf
+			\kgf-"D.S."
 		}
-	}
 
                 \tempo 4 = 160
                 \time 12/8
