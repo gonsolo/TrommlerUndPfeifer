@@ -1,6 +1,6 @@
 \score {
         \header {
-                piece = "Ringeltanz"
+                piece = "Ringeltanz (TODO: Aufbau ausmachen)"
         }
 	\new StaffGroup <<
 		\new Voice = "Gesang" {
@@ -39,7 +39,7 @@
 				}
 				\alternative {
 					{ \kvp \ka \ks \ka \ks \ka \ka | }
-					{ \kvp \ka \ks \ka \ks \ka_"rit." \ka | }
+					{ \ka \ka \ka \ka \kh_"rit." | }
 				}
 			}
 		>>
