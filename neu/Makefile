@@ -7,11 +7,12 @@ all: view
 view: tropf.pdf
 	open $<
 l: listen
-#listen: tropf.midi
-#	timidity $<
-#listen: tropf.wav
-#	pw-play $<
-listen: tropf.mp3
+listen: listen_midi
+listen_midi: tropf.midi
+	timidity $<
+listen_wav: tropf.wav
+	pw-play $<
+listen_mp3: tropf.mp3
 	cvlc tropf.mp3
 tropf.pdf tropf.midi: tropf.ly definitionen.lyh $(TROMMLER_STUECKE) $(PFEIFER_STUECKE) 
 	lilypond $<
@@ -28,4 +29,4 @@ clean:
 	rm -f tropf.pdf tropf-book.pdf *.midi *.wav *.mp3
 e: edit
 edit:
-	vi 12.ly
+	vi 17.ly
