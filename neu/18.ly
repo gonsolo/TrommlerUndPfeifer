@@ -8,11 +8,22 @@ StimmeEinsTeilEins = {
 }
 
 StimmeEinsNoten = {
+	\mark  \markup { \box "A" }
 	\StimmeEinsTeilEins
+	\StimmeEinsTeilEins
+	\mark  \markup { \box "B" }
+	r1
+	r1
+	r1
+	r1
+	r1
+	r1
+	r1
+	r1^"To A"
 }
 
 StimmeEins = {
-        \tempo 4 = 120
+        %\tempo 4 = 120
 	\set DrumStaff.instrumentName = "Stimme Eins"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
@@ -20,18 +31,23 @@ StimmeEins = {
         \new DrumVoice = "StimmeEins" \StimmeEinsNoten
 }
 
-StimmeZweiTeilEins = {
+StimmeZweiNoten = {
         \drummode {
                 r4 \kv \kv r4 |
+		\kvp \kvp r4 |
+
+                \tuplet 3/2 { \ka[ r8 \ka] } \kv \kv \kv |
+		\kv \tuplet 3/2 { \ka[ r8 \ka] } r4 r4
+		\kv \kv \kv \kv |
+		\kv \tuplet 3/2 { \ka[ r8 \ka] } r4 r4
+		\kv \kv \kv \kv |
+		\kv \tuplet 3/2 { \ka[ r8 \ka] } r4 r4
+                \tuplet 3/2 { \ka[ r8 \ka] } \kv \kv \kv |
+		\kv \tuplet 3/2 { \ka[ r8 \ka] } r4 r4
         }
 }
 
-StimmeZweiNoten = {
-	\StimmeZweiTeilEins
-}
-
 StimmeZwei = {
-        \tempo 4 = 120
 	\set DrumStaff.instrumentName = "Stimme Zwei"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
@@ -39,18 +55,24 @@ StimmeZwei = {
         \new DrumVoice = "StimmeZwei" \StimmeZweiNoten
 }
 
-StimmeDreiTeilEins = {
+StimmeDreiNoten = {
         \drummode {
-                \kh r2 |
+                \gv r4 r4 r4 |
+                r4 r4 r4 \gv |
+
+		r1
+		r2. \gv
+		r1
+		r2. \gv
+		r1
+		r2. \gv
+		r1
+		r2. \gv
         }
 }
 
-StimmeDreiNoten = {
-	\StimmeDreiTeilEins
-}
 
 StimmeDrei = {
-        \tempo 4 = 120
 	\set DrumStaff.instrumentName = "Stimme Drei"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0

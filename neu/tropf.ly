@@ -9,7 +9,7 @@
 	title = "Trommler & Pfeifer"
         subsubtitle = \markup {
                 \column {
-                        \line { Nur alt: 18 }
+                        %\line { Nur alt: 18 }
 		}
         }
         tagline = ##f
