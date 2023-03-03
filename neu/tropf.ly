@@ -65,7 +65,9 @@
 \pageBreak
 
 \include "medley04.ly"
+\pageBreak
 \include "medley09.ly"
+\pageBreak
 \include "medley14.ly"
 \include "medley15.ly"
 \pageBreak
