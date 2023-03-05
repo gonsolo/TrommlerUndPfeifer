@@ -15,6 +15,7 @@ listen_wav: tropf.wav
 listen_mp3: tropf.mp3
 	cvlc tropf.mp3
 tropf.pdf tropf.midi: tropf.ly definitionen.lyh $(TROMMLER_STUECKE) $(PFEIFER_STUECKE) 
+	rm -f tropf.midi
 	lilypond $<
 book: tropf-book.pdf
 tropf-book.pdf: tropf.pdf
@@ -29,4 +30,4 @@ clean:
 	rm -f tropf.pdf tropf-book.pdf *.midi *.wav *.mp3
 e: edit
 edit:
-	vi tropf.ly 09.ly medley09.ly
+	vi medley14.ly
