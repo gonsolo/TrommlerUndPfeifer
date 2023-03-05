@@ -78,6 +78,5 @@ Trommel = {
 	\layout {
                 indent = 4.0\cm
         }
-	\midi {}
 }
 

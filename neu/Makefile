@@ -30,4 +30,4 @@ clean:
 	rm -f tropf.pdf tropf-book.pdf *.midi *.wav *.mp3
 e: edit
 edit:
-	vi medley14.ly
+	vi medley15.ly
