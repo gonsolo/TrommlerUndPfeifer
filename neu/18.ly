@@ -1,4 +1,4 @@
-StimmeEinsTeilEins = {
+StimmeEinsTakt = {
         \drummode {
                 \tuplet 3/2 { \ka[ r8 \ka] }
                 \tuplet 3/2 { \ka[ r8 \ka] }
@@ -7,10 +7,16 @@ StimmeEinsTeilEins = {
         }
 }
 
+StimmeEinsA = {
+	\repeat volta 4 {
+		\StimmeEinsTakt
+		\StimmeEinsTakt
+	}
+}
+
 StimmeEinsNoten = {
 	\mark  \markup { \box "A" }
-	\StimmeEinsTeilEins
-	\StimmeEinsTeilEins
+	\StimmeEinsA
 	\mark  \markup { \box "B" }
 	r1
 	r1
@@ -31,11 +37,17 @@ StimmeEins = {
         \new DrumVoice = "StimmeEins" \StimmeEinsNoten
 }
 
-StimmeZweiNoten = {
+StimmeZweiA = {
         \drummode {
-                r4 \kv \kv r4 |
-		\kvp \kvp r4 |
+		\repeat volta 4 {
+			r4 \kv \kv r4 |
+			\kvp \kvp r4 |
+		}
+	}
+}
 
+StimmeZweiB = {
+        \drummode {
                 \tuplet 3/2 { \ka[ r8 \ka] } \kv \kv \kv |
 		\kv \tuplet 3/2 { \ka[ r8 \ka] } r4 r4
 		\kv \kv \kv \kv |
@@ -45,6 +57,11 @@ StimmeZweiNoten = {
                 \tuplet 3/2 { \ka[ r8 \ka] } \kv \kv \kv |
 		\kv \tuplet 3/2 { \ka[ r8 \ka] } r4 r4
         }
+}
+
+StimmeZweiNoten = {
+	\StimmeZweiA
+	\StimmeZweiB
 }
 
 StimmeZwei = {
@@ -55,11 +72,17 @@ StimmeZwei = {
         \new DrumVoice = "StimmeZwei" \StimmeZweiNoten
 }
 
-StimmeDreiNoten = {
+StimmeDreiA = {
         \drummode {
-                \gv r4 r4 r4 |
-                r4 r4 r4 \gv |
+		\repeat volta 4 {
+			\gv r4 r4 r4 |
+			r4 r4 r4 \gv |
+		}
+	}
+}
 
+StimmeDreiB = {
+        \drummode {
 		r1
 		r2. \gv
 		r1
@@ -69,6 +92,11 @@ StimmeDreiNoten = {
 		r1
 		r2. \gv
         }
+}
+
+StimmeDreiNoten = {
+	\StimmeDreiA
+	\StimmeDreiB
 }
 
 
