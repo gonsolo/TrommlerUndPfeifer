@@ -118,10 +118,10 @@ StimmeH = {
 
 StimmeI = {
 	\drummode {
-		\kh \kh						|
-		\ka \ka r4 \kvp \ka				|
-		\kv \kv \StimmeEinsViertel \StimmeEinsViertel	|
-		r4 \kv \tuplet 3/2 { ss8 r8 ss8 } ss4		|
+		\kh \kh								|
+		\StimmeEinsViertel r4 \kv \tuplet 3/2 { r8 r8 \ka }		|
+		\kv \kv \StimmeEinsViertel \StimmeEinsViertel			|
+		r4 \kv \tuplet 3/2 { ss8 r8 ss8 } ss4				|
 	}
 }
 
