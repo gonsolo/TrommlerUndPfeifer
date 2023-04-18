@@ -16,11 +16,11 @@ toBoxABA = \markup { "Dann " \boxA \boxB \boxA }
 toBoxAD = \markup { "Dann " \boxA \boxD }
 
 StimmeEinsViertel = {
-                \tuplet 3/2 { \ka[ r8 \ka] }
+		\ka \ka
 }
 
 StimmeEinsViertelToA = {
-                \tuplet 3/2 { \ka[^\toBoxABA r8 \ka] }
+                \ka^\toBoxABA \ka
 }
 
 StimmeEinsTakt = {
@@ -95,7 +95,7 @@ StimmeF = {
 
 % Pause Pause Schlag
 Pps = {
-                \tuplet 3/2 { r8 r8 \ka }
+		r8 \ka
 }
 
 
@@ -119,9 +119,9 @@ StimmeH = {
 StimmeI = {
 	\drummode {
 		\kh \kh								|
-		\StimmeEinsViertel r4 \kv \tuplet 3/2 { r8 r8 \ka }		|
+		\StimmeEinsViertel r4 \kv \Pps					|
 		\kv \kv \StimmeEinsViertel \StimmeEinsViertel			|
-		r4 \kv \tuplet 3/2 { ss8 r8 ss8 } ss4				|
+		r4 \kv ss8 ss8 ss4						|
 	}
 }
 
@@ -151,7 +151,8 @@ StimmeL = {
 }
 
 StimmeEinsNoten = {
-        \tempo 4 = 100
+	\tempo \markup { Swing \rhythm { 8[ 8] } = \rhythm { \tuplet 3/2 { 8( 8) 8 } } = 100 }
+
 	\mark \boxA
 	\StimmeEinsA
 	\mark \boxB
