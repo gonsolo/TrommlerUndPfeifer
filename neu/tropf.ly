@@ -100,5 +100,6 @@
 \include "ringeltanz.ly"
 \include "ungaresca.ly"
 \include "traubenritt.ly"
-\include "heiduttentanz.ly"
+\include "heiduckentanz.ly"
+\include "tour_dijon.ly"
 \include "fehlt.ly"
