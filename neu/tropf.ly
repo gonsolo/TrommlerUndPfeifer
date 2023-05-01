@@ -87,6 +87,8 @@
 \include "21.ly"
 \pageBreak
 
+\include "medley02.ly"
+\pageBreak
 \include "medley04.ly"
 \pageBreak
 \include "medley09.ly"
