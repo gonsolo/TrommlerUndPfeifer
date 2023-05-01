@@ -1,12 +1,21 @@
 KleineTrommelNoten = {
         \drummode {
-		\repeat volta 8 {
+		\repeat volta 4 {
 			\ka \ka ss4 \ka \ka ss4
 		}
 		\repeat volta 4 {
-			r1
+			\ks \ks \ks \ks \ksx \ks \ks \ksx
+			\ks \ks \ks \ks \ksx \ks \ks \ksx
+			\ks \ks \ks \ks \ksx \ks \ks \ksx
+			\ks \ks \ks \ksx \ks \ksx \ks \ksx
+		}
+		\repeat volta 4 {
 			r1
 		}
+		\repeat volta 4 {
+			r8 \ka r8 \ka r8 \ka r8 \ka
+		}
+		\ka \ka ss4 r2
         }
 }
 
@@ -21,13 +30,20 @@ KleineTrommel = {
 
 GrosseTrommelNoten = {
         \drummode {
-		\repeat volta 8 {
+		\repeat volta 4 {
 			\ga \ga ss4 \ga \ga ss4
 		}
 		\repeat volta 4 {
 			\ga \ga ss16 \ga ss16 \ga \ga ss16 \ga ss16
 			\ga \ga ss16 \ga ss16 \gv ss4
 		}
+		\repeat volta 4 {
+			\gv \gv \gv \gs \ga \gs
+		}
+		\repeat volta 4 {
+			\gv \gv \gv \gs \ga \gs
+		}
+		\ga \ga ss4 r2
         }
 }
 
