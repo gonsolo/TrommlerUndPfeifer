@@ -6,25 +6,37 @@ FloetenEins = \relative {
 	g4 e4 d2		|
 }
 
-AlterWichser = \relative {
-
-	\FloetenEins
-
+FloetenZwei = \relative {
 	d'4 d8 e8 f4 f4		|
 	g4 e4 e8 f8 d4		|
 	f4 e8 f8 d4. d8		|
 	d4 cis4 d2		|
+}
 
+FloetenDrei = \relative {
 	a'4 g8 a8 b4 b4		|
 	g4 a4 a2		|
 	f4 e8 f8 g4 d4		|
 	d4 cis4 d2		|
-
-	\FloetenEins
 }
 
-FloetenNoten = {
-	\AlterWichser
+FloetenNoten = \relative {
+
+	r1 r1 r1 r1
+	r1 r1 r1 r1
+
+	\FloetenEins
+	\FloetenEins
+
+	\FloetenZwei
+
+	\FloetenEins
+	\FloetenEins
+
+	\FloetenDrei
+
+	\FloetenEins
+
 }
 
 Floeten = {
@@ -54,10 +66,29 @@ TrommelZwei = {
 	}
 }
 
+TrommelRandHalb = {
+        \drummode {
+		ss8 ss16 ss16 ss4 ss8 ss16 ss16 ss4
+		ss8 ss16 ss16 ss8 ss8 ss8 ss16 ss16 ss8 ss16 ss16
+		ss8 ss8 ss8 ss16 ss16 ss8 ss8 ss8 ss16 ss16
+		ss8 ss8 ss16 ss16 ss16 ss16 ss2
+	}
+}
+
 TrommelNoten = {
 	\TrommelEins
 	\TrommelZwei
+
 	\TrommelEins
+	\TrommelZwei
+
+	\TrommelRandHalb
+
+	\TrommelEins
+	\TrommelZwei
+
+	\TrommelRandHalb
+
 	\TrommelZwei
 }
 
