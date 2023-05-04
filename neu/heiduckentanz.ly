@@ -1,6 +1,6 @@
 \score {
         \header {
-                piece = "Heiduttentanz"
+                piece = "Heiduckentanz"
         }
 	\new StaffGroup <<
                 \new DrumStaff <<
