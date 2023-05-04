@@ -37,7 +37,7 @@ ZweiteStimme = {
 
 \score {
         \header {
-                piece = "Tour Dijon"
+                piece = "Tourdion"
         }
 	\new StaffGroup <<
 		\time 6/8
