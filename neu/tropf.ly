@@ -93,6 +93,8 @@
 \pageBreak
 \include "medley09.ly"
 \pageBreak
+\include "medley12.ly"
+\pageBreak
 \include "medley14.ly"
 \pageBreak
 \include "medley15.ly"
