@@ -99,9 +99,12 @@
 \pageBreak
 \include "medley15.ly"
 \pageBreak
-\include "ringtanz.ly"
-\include "ungaresca.ly"
-\include "traubenritt.ly"
+
 \include "heiduckentanz.ly"
+\include "ringtanz.ly"
 \include "tourdion.ly"
-\include "fehlt.ly"
+\include "to_heaven.ly"
+\include "traubenritt.ly"
+\include "ungaresca.ly"
+
+\include "pfeifer.ly"
