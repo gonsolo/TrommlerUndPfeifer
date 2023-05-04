@@ -104,7 +104,7 @@ Trommel = {
 
 \score {
         \header {
-                piece = "II Medley \"Alter Wichser\" (TODO: Stöcke, A AB AxhBxh AB AxhBxh B)"
+                piece = "II Medley \"Altavista\" (TODO: Stöcke, A AB AxhBxh AB AxhBxh B)"
         }
 	\new StaffGroup <<
 		\new Staff << \Floeten >>
