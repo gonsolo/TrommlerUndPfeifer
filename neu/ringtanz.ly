@@ -1,6 +1,6 @@
 \score {
         \header {
-                piece = "Ringeltanz (TODO: Aufbau ausmachen)"
+                piece = "Ringtanz (3 Versionen)"
         }
 	\new StaffGroup <<
 		\new Voice = "Gesang" {
