@@ -6,7 +6,7 @@ ErsteStimmeNoten = \relative {
 
 ErsteStimme = {
         %\tempo 4 = 120
-	\time 4/4
+	\time 12/8
 	\set DrumStaff.instrumentName = "Erste Stimme"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
@@ -16,12 +16,15 @@ ErsteStimme = {
 
 ZweiteStimmeNoten = {
         \drummode {
-		r1
+		ss4 ss8
+		ss4 ss8
+		ss4 ss8
+		ss4 ss8
         }
 }
 
 ZweiteStimme = {
-	\time 6/8
+	\time 12/8
 	\set DrumStaff.instrumentName = "Zweite Stimme"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
@@ -34,7 +37,6 @@ ZweiteStimme = {
                 piece = "To Heaven"
         }
 	\new StaffGroup <<
-		\time 6/8
                 \new DrumStaff << \ErsteStimme >>
                 \new DrumStaff << \ZweiteStimme>>
 	>>

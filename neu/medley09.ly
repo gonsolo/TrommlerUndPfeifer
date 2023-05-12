@@ -1,28 +1,39 @@
-Klatschlied = \relative {
-	%\unfoldRepeats {
+FloetenNoten = \relative {
 	\repeat volta 2 {
-		a''4^"Klatschlied" a8 g4 f8 e4 d8 c4. |
+		a''4 a8 g4 f8 e4 d8 c4. |
 	}
 	\alternative {
 		{ d4 e8 f4 a8 g4 f8 e4 d8 | }
 		{ d4 e8 f4 g8 f d e d4. | }
 	}
+
 	\repeat volta 2 {
 		d4 d8 d4 d8 c4 c8 f4. |
 		g4 g8 a4 g8 f4 e8 d4. |
 	}
+
 	\repeat volta 2 {
 		a'8 a a d,4. a' d, |
 	}
 	\repeat volta 2 {
 		a'4 a8 g4 b8 a2. |
 	}
-	%}
+
+%	a''4 a8 g4 f8 e4 d8 c4. |
+%	r1
+%	a''4 a8 g4 f8 e4 d8 c4. |
+%	r1
+%
+%	d4 d8 d4 d8 c4 c8 f4. |
+%	r1
+%	d4 d8 d4 d8 c4 c8 f4. |
+%	r1
+%
+%	a'8 a a d,4. a' r |
+%	a'8 a a d,4. a' r |
 }
 
-FloetenNoten = {
-	\Klatschlied
-}
+
 
 Floeten = {
         \time 12/8
@@ -42,22 +53,40 @@ TrommelFigur = {
 
 TrommelNoten = {
 	\repeat volta 2 {
-		\TrommelFigur
+		r1.
 	}
 	\alternative {
-		{ \TrommelFigur }
-		{ \TrommelFigur }
+		{ r1. }
+		{ r1. }
 	}
 	\repeat volta 2 {
-		{ \TrommelFigur }
-		{ \TrommelFigur }
+		{ r1. }
+		{ r1. }
 	}
 	\repeat volta 2 {
-		\TrommelFigur
+		r1.
 	}
 	\repeat volta 2 {
-		\TrommelFigur
+		r1.
 	}
+
+%	\repeat volta 2 {
+%		\TrommelFigur
+%	}
+%	\alternative {
+%		{ \TrommelFigur }
+%		{ \TrommelFigur }
+%	}
+%	\repeat volta 2 {
+%		{ \TrommelFigur }
+%		{ \TrommelFigur }
+%	}
+%	\repeat volta 2 {
+%		\TrommelFigur
+%	}
+%	\repeat volta 2 {
+%		\TrommelFigur
+%	}
 }
 
 Trommel = {
