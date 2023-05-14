@@ -1,22 +1,35 @@
 FloetenNoten = \relative {
 	\repeat volta 2 {
-		a''4 a8 g4 f8 e4 d8 c4. |
+		a''4 a8 g4 f8 e4 d8 c4.		|
+		r1.				|
+	}
+	\repeat volta 2 {
+		d4 d8 d4 d8 c4 c8 f4.		|
+		r1.				|
+	}
+	\repeat volta 2 {
+		a4. d,4. r2.			|
+	}
+	\repeat volta 2 {
+		a'4 a8 g4 b8 a4. r4.		|
+	}
+
+	\repeat volta 2 {
+		a4 a8 g4 f8 e4 d8 c4.		|
 	}
 	\alternative {
-		{ d4 e8 f4 a8 g4 f8 e4 d8 | }
-		{ d4 e8 f4 g8 f d e d4. | }
-	}
-
-	\repeat volta 2 {
-		d4 d8 d4 d8 c4 c8 f4. |
-		g4 g8 a4 g8 f4 e8 d4. |
-	}
-
-	\repeat volta 2 {
-		a'8 a a d,4. a' d, |
+		{ d4 e8 f4 a8 g4 f8 e4 d8	| }
+		{ d4 e8 f4 g8 f d e d4.		| }
 	}
 	\repeat volta 2 {
-		a'4 a8 g4 b8 a2. |
+		d4 d8 d4 d8 c4 c8 f4.		|
+		g4 g8 a4 g8 f4 e8 d4.		|
+	}
+	\repeat volta 2 {
+		a'4. d, a' d,			|
+	}
+	\repeat volta 2 {
+		a'4 a8 g4 b8 a4. r4.		|
 	}
 
 %	a''4 a8 g4 f8 e4 d8 c4. |
@@ -51,23 +64,38 @@ TrommelFigur = {
 	}
 }
 
-TrommelNoten = {
+TrommelNoten = \drummode {
 	\repeat volta 2 {
-		r1.
+		r1.					|
+		\kv \ka \kv \ka \kv \ka \kvp		|
+	}
+	\repeat volta 2 {
+		r1.					|
+		\kv \ka \kv \ka \ka \ka \ka \kvp	|
+	}
+	\repeat volta 2 {
+		r2. \ka \ka \ka \kvp			|
+	}
+	\repeat volta 2 {
+		r2. r4. \kvp				|
+	}
+		
+	\repeat volta 2 {
+		ss4 ss8 ss4 ss8 ss4 ss8 ss4 ss8		|
 	}
 	\alternative {
-		{ r1. }
-		{ r1. }
+		{ ss4 ss8 ss4 ss8 ss4 ss8 ss4 ss8	| }
+		{ ss4 ss8 ss4 ss8 ss4 ss8 ss4 ss8	| }
 	}
 	\repeat volta 2 {
-		{ r1. }
-		{ r1. }
+		ss4 ss8 ss4 ss8 ss4 ss8 ss4 ss8	|
+		ss4 ss8 ss4 ss8 ss4 ss8 ss4 ss8	|
 	}
 	\repeat volta 2 {
-		r1.
+		ss4. ss4. ss8 ss8 ss8 ss4.		|
 	}
 	\repeat volta 2 {
-		r1.
+		ss4 ss8 ss4 ss8 ss4. \kvp |
 	}
 
 %	\repeat volta 2 {
@@ -111,5 +139,6 @@ Trommel = {
 	\layout {
                 indent = 4.0\cm
         }
+	\midi {}
 }
 
