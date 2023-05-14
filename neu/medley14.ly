@@ -1,22 +1,18 @@
-Estampie = \relative {
-	%\unfoldRepeats {
+FloetenNoten = \relative {
+	r1.						|
+	r1.						|
 	\repeat volta 2 {
-		c''4^"Estampie" b8 c4 d8 e4. e4 f8 |
-		g4. g4 f8 e2.
+		c''4 b8 c4 d8 e4. e4 f8	|
+		g4. g4 f8 e2.				|
 	}
 	\repeat volta 2 {
-		e4 g8 e4 g8 f4. d4 e8 |
-		f4 d8 e4 c8 d4. b4 c8 |
+		e4 g8 e4 g8 f4. d4 e8			|
+		f4 d8 e4 c8 d4. b4 c8			|
 	}
 	\alternative {
-		{ d4 d8 b4 c8 d2. }
-		{ d4 e8 c4 b8 c2. }
+		{ d4 d8 b4 c8 d2.			| }
+		{ d4 e8 c4 b8 c2.			| }
 	}
-	%}
-}
-
-FloetenNoten = {
-	\Estampie
 }
 
 Floeten = {
@@ -29,19 +25,24 @@ Floeten = {
         \new Voice = "Floeten" \FloetenNoten
 }
 
-TrommelFigurEins = {
+Dan = {
 	\drummode {
-		\kax \ka \ka \kax \ka \ka \kax \ka \ka \kax \ka \ka |
+		\kax \ka \ka \kax \ka \ka \kax \ka \ka \kax \ka \ka	|
+		\kax \ka \ka \kax \ka \ka \kax \ka \kax \kax \ka \ka	|
 	}
+}
+
+TrommelFigurEins = {
+	\drummode { \kax \ka \ka \kax \ka \ka \kax \ka \ka \kax \ka \ka | }
 }
 
 TrommelFigurZwei = {
 	\drummode {
-		\kax \ka \ka \kax \ka \ka \kax \ka \ka \kax \ka \kax |
-	}
+		\kax \ka \ka \kax \ka \ka \kax \ka \ka \kax \ka \kax | }
 }
 
 TrommelNoten = {
+	\Dan
 	\repeat volta 2 {
 		\TrommelFigurEins
 		\TrommelFigurZwei
