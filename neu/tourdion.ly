@@ -1,3 +1,33 @@
+FloetenEins = \relative {
+	d''4 e f g f e	|
+	d2. e4 f g	|
+	a g f f g e	|
+	f2 e4 d c2	|
+	d4 e f g f e	|
+	d2 e f		|
+	r1.		|		
+	r1.		|		
+	r1.		|		
+	r1.		|		
+	r1.		|		
+	r1.		|		
+}
+
+FloetenZwei = {
+	r1.		|		
+	r1.		|		
+	r1.		|		
+	r1.		|		
+	r1.		|		
+	r1.		|		
+	r1.		|		
+	r1.		|		
+	r1.		|		
+	r1.		|		
+	r1.		|		
+	r1.		|		
+}
+
 ErsteStimme = {
         \drummode {
 		\ka ss8 ss8 \ka ss8 \ka
@@ -27,7 +57,7 @@ ZweiteStimmeNoten = {
 }
 
 ZweiteStimme = {
-	\time 6/8
+	\time 3/2
 	\set DrumStaff.instrumentName = "Zweite Stimme"
 	\set DrumStaff.midiInstrument = "melodic tom"
         \set Staff.midiPanPosition = 1.0
@@ -41,6 +71,8 @@ ZweiteStimme = {
         }
 	\new StaffGroup <<
 		\time 6/8
+		\new Staff << \FloetenEins >>
+		\new Staff << \FloetenZwei >>
                 \new DrumStaff << \ErsteStimme >>
                 \new DrumStaff << \ZweiteStimme>>
 	>>
