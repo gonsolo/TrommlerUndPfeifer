@@ -6,6 +6,8 @@
 		\new Voice = "Gesang" {
 			\tempo 4 = 100
 			\relative a {
+				r1				|
+				r1				|
 				\repeat volta 2 {
 					d4 a' a4. g8 |
 					f8( e) f( g) a4 d, |
@@ -32,6 +34,8 @@
 		}
 		\new DrumStaff <<
 			\drummode {
+				\gvp \ga \gvp \ga	|
+				\gvp \ga \gvp \ga	|
 				\repeat volta 2 {
 					\kvp \ka \kvp \ka |
 					\kvp \ka \kvp \ka |
