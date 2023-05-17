@@ -4,6 +4,8 @@ MEDLEYS = medley02.ly medley04.ly medley09.ly medley12.ly medley14.ly medley15.l
 PFEIFER_TROMMLER_STUECKE = heiduckentanz.ly ringtanz.ly tourdion.ly to_heaven.ly traubenritt.ly ungaresca.ly
 PFEIFER_STUECKE = pfeifer.ly
 
+STUECKE = $(TROMMLER_STUECKE) $(MEDLEYS) $(PFEIFER_TROMMLER_STUECKE) $(PFEIFER_STUECKE) 
+
 all: view
 #all: listen
 view: tropf.pdf
@@ -16,7 +18,7 @@ listen_wav: tropf.wav
 	pw-play $<
 listen_mp3: tropf.mp3
 	cvlc tropf.mp3
-tropf.pdf tropf.midi: tropf.ly definitionen.lyh $(TROMMLER_STUECKE) $(MEDLEYS) $(PFEIFER_TROMMLER_STUECKE) $(PFEIFER_STUECKE) 
+tropf.pdf tropf.midi: tropf.ly definitionen.lyh zusammenfassung.ly $(STUECKE)
 	rm -f tropf.midi
 	lilypond $<
 book: tropf-book.pdf
