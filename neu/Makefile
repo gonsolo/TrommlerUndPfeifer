@@ -1,5 +1,5 @@
 TROMMLER_STUECKE = 01.ly 02.ly 03.ly 04.ly 05.ly 06.ly 07.ly 08.ly 09.ly 10.ly 11.ly 12.ly 13.ly 14.ly 15.ly \
-	 16.ly 17.ly 18.ly 19.ly 20.ly 21.ly
+	 16.ly 17.ly 18.ly 19.ly 20.ly 21.ly hell_awaits.ly
 MEDLEYS = medley02.ly medley04.ly medley09.ly medley12.ly medley14.ly medley15.ly
 PFEIFER_TROMMLER_STUECKE = heiduckentanz.ly ringtanz.ly tourdion.ly to_heaven.ly traubenritt.ly ungaresca.ly
 PFEIFER_STUECKE = pfeifer.ly
@@ -34,4 +34,4 @@ clean:
 	rm -f tropf.pdf tropf-book.pdf *.midi *.wav *.mp3
 e: edit
 edit:
-	vi medley09.ly
+	vi tourdion.ly

@@ -4,38 +4,48 @@ FloetenEins = \relative {
 	a g f f g e	|
 	f2 e4 d c2	|
 	d4 e f g f e	|
-	d2 e f		|
-	r1.		|		
-	r1.		|		
-	r1.		|		
-	r1.		|		
-	r1.		|		
-	r1.		|		
+	d2 f e		|
+	a2. g4 a b	|		
+	a1 a2		|		
+	c4 b a g f e	|		
+	f2. e4 d2	|		
+	a'2. g4 a b	|		
+	a2 g4 f e2	|		
 }
 
-FloetenZwei = {
-	r1.		|		
-	r1.		|		
-	r1.		|		
-	r1.		|		
-	r1.		|		
-	r1.		|		
-	r1.		|		
-	r1.		|		
-	r1.		|		
-	r1.		|		
-	r1.		|		
-	r1.		|		
+FloetenZwei = \relative {
+	d''1 d2		|		
+	d1 d2		|		
+	f2 b a		|
+	d,2 e1		|
+	d1 d2		|		
+	d1 c2		|		
+	d1 d2		|		
+	f1 f2		|		
+	c1 c2		|		
+	d1 d2		|		
+	f1 f2		|		
+	f1 c2		|	
 }
 
 ErsteStimme = {
         \drummode {
-		\ka ss8 ss8 \ka ss8 \ka
+		\kv ss4 ss4 \kv ss4 \kv
+		\kv ss4 ss4 \kv ss4 \kv
+		\kv ss4 ss4 \kv ss4 \kv
+		\kv ss4 ss4 \kv ss4 \kv
+		\kv ss4 ss4 \kv ss4 \kv
+		\kv ss4 ss4 \kv ss4 \kv
+		\kv ss4 ss4 \kv ss4 \kv
+		\kv ss4 ss4 \kv ss4 \kv
+		\kv ss4 ss4 \kv ss4 \kv
+		\kv ss4 ss4 \kv ss4 \kv
+		\kv ss4 ss4 \kv ss4 \kv
+		\kv ss4 ss4 \kv ss4 \kv
         }
 }
 
 ErsteStimmeNoten = {
-	\ErsteStimme
 	\ErsteStimme
 }
 
@@ -51,8 +61,18 @@ ErsteStimme = {
 
 ZweiteStimmeNoten = {
         \drummode {
-		r2.
-		\ghp
+		\ggp
+		\ggp
+		\ggp
+		\ggp
+		\ggp
+		\ggp
+		\ggp
+		\ggp
+		\ggp
+		\ggp
+		\ggp
+		\ggp
         }
 }
 

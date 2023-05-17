@@ -62,6 +62,9 @@ ksx = { \drummode { \ks \accent } }
 % Ganze (g)
 gg = { \drummode { tomfh1 } }
 
+% Punktierte Ganze (gp)
+ggp = { \drummode { tomfh1. } }
+
 % Halbe (h)
 gh = { \drummode { tomfh2 } }
 
@@ -88,4 +91,8 @@ gs = { \drummode { tomfh16 } }
 
 % Akzentuierte Sechzehntel (sx)
 gsx = { \drummode { \gs \accent } }
+
+% Zweiundreissigstel (z)
+gz = { \drummode { tomfh32 } }
+
 
