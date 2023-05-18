@@ -1,7 +1,7 @@
 FloetenNoten = \relative {
                 \partial 8 r8
                 \repeat volta 16 {
-                        r1
+			a'4 g8 f8 e4 e8 f8
 		}
 }
 
